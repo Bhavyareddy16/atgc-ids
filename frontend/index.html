@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATGCO-IDS Security Control Center</title>
+    <!-- Outfit Font for Headings, Inter for UI, Fira Code for Log Terminals -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- 1. HEADER -->
+        <header class="dashboard-header">
+            <div class="header-logo">
+                <div class="pulsing-core"></div>
+                <h1>ATGCO-IDS <span>Control Center</span></h1>
+            </div>
+            <div class="system-status">
+                <div class="status-indicator active"></div>
+                <span>SYSTEM ACTIVE: SIMULATION MODE</span>
+                <span class="divider">|</span>
+                <span id="header-time">2026-07-23 15:47:00</span>
+            </div>
+        </header>
+
+        <!-- 2. MAIN CONTAINER -->
+        <main class="dashboard-grid">
+            
+            <!-- LEFT PANEL: METRICS & CONTROLS -->
+            <section class="left-panel flex-column">
+                
+                <!-- Trust telemetry gauges -->
+                <div class="glass-card trust-telemetry">
+                    <h2>Trust Telemetry</h2>
+                    <div class="gauge-grid">
+                        <div class="radial-gauge-wrapper">
+                            <svg class="radial-gauge" viewBox="0 0 100 100">
+                                <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+                                <circle class="gauge-progress" id="global-trust-gauge" cx="50" cy="50" r="40"></circle>
+                            </svg>
+                            <div class="gauge-value" id="global-trust-val">0.78</div>
+                            <div class="gauge-label">Global Trust Index</div>
+                        </div>
+                        <div class="radial-gauge-wrapper">
+                            <svg class="radial-gauge" viewBox="0 0 100 100">
+                                <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+                                <circle class="gauge-progress" id="consensus-gauge" cx="50" cy="50" r="40"></circle>
+                            </svg>
+                            <div class="gauge-value" id="consensus-val">96%</div>
+                            <div class="gauge-label">Consensus Agree</div>
+                        </div>
+                    </div>
+                    <div class="linear-metrics">
+                        <div class="metric-row">
+                            <span>Detection F1-Score</span>
+                            <span class="metric-num" id="f1-score-val">75.6%</span>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 75.6%;"></div>
+                        </div>
+                        <div class="metric-row">
+                            <span>False Alarm Rate (FPR)</span>
+                            <span class="metric-num warning-text" id="fpr-val">0.24%</span>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar warning" style="width: 24%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Host inspection detail -->
+                <div class="glass-card node-inspector">
+                    <h2>Host Inspector</h2>
+                    <div class="unselected-message" id="inspector-placeholder">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <p>Click a network node in the topology map to inspect details.</p>
+                    </div>
+                    <div class="inspector-details hidden" id="inspector-content">
+                        <div class="detail-row">
+                            <span class="label">Host ID:</span>
+                            <span class="val bold-text" id="inspect-node-id">Host_03</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Security State:</span>
+                            <span class="status-badge state-benign" id="inspect-node-state">Benign</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Evolved Trust ($T_i$):</span>
+                            <span class="val numeric bold-text color-cyan" id="inspect-node-trust">0.94</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Consensus Logits:</span>
+                            <span class="val monospace" id="inspect-node-logits">[1.2, -0.4, 0.1, -1.8]</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-danger" id="btn-isolate">Isolate Host</button>
+                            <button class="btn btn-secondary" id="btn-reset-trust">Reset Trust</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulation controller -->
+                <div class="glass-card sim-controls">
+                    <h2>Simulation Control</h2>
+                    <div class="control-row">
+                        <button class="btn btn-primary" id="btn-toggle-sim">Pause Simulation</button>
+                        <button class="btn btn-secondary" id="btn-inject-attack">Inject Attack</button>
+                    </div>
+                    <div class="control-row secondary-row">
+                        <span>Speed Multiplier:</span>
+                        <div class="speed-toggle">
+                            <span class="speed-opt active" data-speed="1">1x</span>
+                            <span class="speed-opt" data-speed="2">2x</span>
+                            <span class="speed-opt" data-speed="5">5x</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- RIGHT PANEL: GRAPH TOPOLOGY & EXPLAINABILITY -->
+            <section class="right-panel flex-column">
+                
+                <!-- Dynamic Network Topology -->
+                <div class="glass-card topology-card flex-grow">
+                    <div class="card-header">
+                        <h2>Network Topology Map</h2>
+                        <div class="graph-legend">
+                            <span class="legend-item"><span class="dot benign"></span>Benign</span>
+                            <span class="legend-item"><span class="dot suspect"></span>Suspect</span>
+                            <span class="legend-item"><span class="dot isolated"></span>Isolated</span>
+                        </div>
+                    </div>
+                    <div class="svg-container" id="svg-host-canvas">
+                        <!-- Dynamic SVG graph generated here -->
+                    </div>
+                </div>
+
+                <!-- Explainability Hub tabs -->
+                <div class="glass-card explainability-card">
+                    <div class="tab-header">
+                        <button class="tab-btn active" data-tab="saliency">Feature Saliency (Explainability)</button>
+                        <button class="tab-btn" data-tab="consensus">Consensus Convergence</button>
+                    </div>
+                    <div class="tab-content" id="tab-saliency">
+                        <div class="explain-grid">
+                            <div class="explain-image">
+                                <img src="feature_saliency.png" alt="Feature Saliency Analysis" id="img-saliency">
+                            </div>
+                            <div class="explain-text">
+                                <h3>Gradient Saliency Attribution</h3>
+                                <p>This chart displays the feature attributions driving network anomaly classifications. Features with high saliency (e.g. <code>ct_state_ttl</code> and <code>rate</code>) show the highest derivative weights in the Multi-Agent GNN Encoder.</p>
+                                <div class="mini-table">
+                                    <div class="table-row"><span>ct_state_ttl</span><span class="bar" style="width: 90%;"></span><span>90%</span></div>
+                                    <div class="table-row"><span>rate</span><span class="bar" style="width: 75%;"></span><span>75%</span></div>
+                                    <div class="table-row"><span>spkts</span><span class="bar" style="width: 60%;"></span><span>60%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content hidden" id="tab-consensus">
+                        <div class="explain-grid">
+                            <div class="explain-image">
+                                <img src="consensus_convergence.png" alt="Consensus Convergence Curve" id="img-consensus">
+                            </div>
+                            <div class="explain-text">
+                                <h3>Consensus Relaxation Convergence</h3>
+                                <p>Plotting the GCO Jacobi relaxation error over iterations. Neighboring agent representations converge to a unified consensus agreement within <strong>5 Jacobi steps</strong>, satisfying the quadratic optimization criteria:</p>
+                                <div class="formula">
+                                    $$z^* = \text{argmin}_z \sum_i T_i \|z_i - x_i\|^2 + \lambda \sum_{i,j} A_{ij} \|z_i - z_j\|^2$$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+        </main>
+
+        <!-- 3. SIEM SCROLLING ALERTS (BOTTOM TERMINAL) -->
+        <footer class="dashboard-footer glass-card">
+            <div class="card-header">
+                <h2>SIEM Mitigation Live Feed</h2>
+                <button class="clear-btn" id="btn-clear-logs">Clear Logs</button>
+            </div>
+            <div class="terminal-logs" id="terminal-stream">
+                <!-- scrolling log text will go here -->
+            </div>
+        </footer>
+    </div>
+
+    <!-- MathJax to render equations in explainability panel -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

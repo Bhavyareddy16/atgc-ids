@@ -1,0 +1,16 @@
+# Ignore large preprocessed pickle datasets
+datasets/processed/*.pkl
+datasets/*.csv
+
+# Ignore generated PyG graph snapshot files
+datasets/graphs/
+
+# Ignore saved deep learning model weights
+models/saved/
+
+# Ignore Python caches and system files
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.gemini/
