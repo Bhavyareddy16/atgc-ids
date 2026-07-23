@@ -113,10 +113,10 @@ To visually demonstrate runtime trust propagation, alert overrides, and zero-day
 - **Explainability Tab**: View the gradient feature saliency rankings and Jacobi convergence error.
 
 ### How to Run:
-Navigate to the `frontend/` folder and start a local HTTP server:
+Start a local HTTP server in the repository root directory:
 ```bash
-cd frontend
 python3 -m http.server 8000
 ```
 Open your browser and navigate to **[http://localhost:8000](http://localhost:8000)**.
-*(Alternatively, you can simply double-click `index.html` inside the unzipped `frontend` folder to open it natively without a server.)*
+*(Alternatively, you can simply double-click `index.html` inside the unzipped project folder to open it natively without a server.)*
+
