@@ -16,7 +16,7 @@ def load_graph_snapshots(graph_dir, split_prefix='train'):
     files = sorted(files, key=lambda f: int(os.path.basename(f).split('_')[-1].split('.')[0]))
     return files
 
-def train_atgc_macids(graph_dir, feature_cols, num_classes=10, epochs=2, lr=0.001, device='cpu',
+def train_atgc_macids(graph_dir, feature_cols, num_classes=10, epochs=15, lr=0.001, device='cpu',
                       train_prefix='train', test_prefix='test',
                       total_train_records=175341, total_test_records=82332,
                       normal_class_idx=6, save_name='atgc_macids.pt'):

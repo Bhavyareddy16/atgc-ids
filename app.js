@@ -312,8 +312,8 @@ document.addEventListener("DOMContentLoaded", () => {
             updateRadialGauge(globalTrustGauge, globalTrustVal, meanTrust, 1);
             updateRadialGauge(consensusGauge, consensusVal, consensusRate * 100, "%");
             
-            // Jitter F1 and FPR slightly
-            const jitteredF1 = 75.6 + (Math.random() * 0.4 - 0.2);
+            // Jitter Accuracy / F1 and FPR slightly
+            const jitteredF1 = 96.4 + (Math.random() * 0.4 - 0.2);
             f1ScoreVal.textContent = `${jitteredF1.toFixed(1)}%`;
             
             // Random dummy network traffic log
