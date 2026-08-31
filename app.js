@@ -69,7 +69,34 @@ document.addEventListener("DOMContentLoaded", () => {
     // Start metric update loop
     startMetricUpdates();
 
-    // 3. TAB CONTROLLER
+    // 3. TAB & IMAGE ZOOM CONTROLLER
+    const imageModal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalClose = document.getElementById("modal-close");
+
+    // Add click event to all chart/diagram images for full-screen zoom
+    document.querySelectorAll(".explain-image img").forEach(img => {
+        img.addEventListener("click", () => {
+            imageModal.classList.remove("hidden");
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        });
+    });
+
+    if (modalClose) {
+        modalClose.addEventListener("click", () => {
+            imageModal.classList.add("hidden");
+        });
+    }
+
+    if (imageModal) {
+        imageModal.addEventListener("click", (e) => {
+            if (e.target === imageModal || e.target === modalImg) {
+                imageModal.classList.add("hidden");
+            }
+        });
+    }
+
     const tabBtns = document.querySelectorAll(".tab-btn");
     tabBtns.forEach(btn => {
         btn.addEventListener("click", () => {
