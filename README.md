@@ -1,12 +1,15 @@
 # ATGC-MACIDS: Adaptive Trust Graph Consensus Multi-Agent Intrusion Detection System
 
+[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-00f0ff?style=for-the-badge&logo=github)](https://bhavyareddy16.github.io/atgc-ids/)
 [![Research Status](https://img.shields.io/badge/Research-IEEE%20TDSC%2FTIFS%20Ready-success?style=for-the-badge)](https://github.com/Bhavyareddy16/atgc-ids)
 [![Python Version](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge)](https://www.python.org/)
 [![GNN Stack](https://img.shields.io/badge/PyG-PyTorch%20Geometric-orange?style=for-the-badge)](https://pytorch-geometric.com/)
 
+> 🌐 **Live Interactive Web Dashboard:** **[https://bhavyareddy16.github.io/atgc-ids/](https://bhavyareddy16.github.io/atgc-ids/)**
+
 An implementation of the **ATGC-MACIDS** (Adaptive Trust Graph Consensus Multi-Agent Intrusion Detection System) framework, centered around the **Adaptive Trust Graph Consensus Optimization (ATGCO)** algorithm. 
 
-This repository contains the complete end-to-end dataset preprocessing, Dynamic Temporal Graph Construction, Hierarchical Multi-Agent Encoders, Dynamic Trust Evolution, Graph Episodic Memory, Differentiable Graph Consensus Optimization, Open-Set Zero-Day Detection, Autonomous Response Agents, and an **Interactive Glassmorphic Neon Web Dashboard** for pipeline simulation.
+This repository contains the complete end-to-end dataset preprocessing, Dynamic Temporal Graph Construction, Hierarchical Multi-Agent Encoders, Dynamic Trust Evolution, Graph Episodic Memory, Differentiable Graph Consensus Optimization, Open-Set Zero-Day Detection, Autonomous Response Agents, Cyber Threat Knowledge Graph (CT-KG) mapping to MITRE ATT&CK, and an **Interactive Glassmorphic Neon Web Dashboard** for pipeline simulation.
 
 ---
 
