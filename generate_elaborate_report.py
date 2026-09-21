@@ -180,8 +180,8 @@ def build_elaborate_vit_report():
     add_p("A PROJECT REPORT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=18)
     add_p("Submitted by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=12)
     
-    add_p("S.BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=4)
-    add_p("(Reg. No: 22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=24)
+    add_p("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=4)
+    add_p("REGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=24)
     
     add_p("in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=18)
     add_p("MASTER OF TECHNOLOGY IN COMPUTER SCIENCE AND ENGINEERING\nWITH SPECIALIZATION IN BUSINESS ANALYTICS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
@@ -202,7 +202,7 @@ def build_elaborate_vit_report():
     add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=18, space_before=36, space_after=24)
     add_p("A PROJECT REPORT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=18)
     add_p("Submitted by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=12)
-    add_p("S.BHAVYA SRI\n(Reg. No: 22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=24)
+    add_p("S. BHAVYA SRI\nREGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=24)
     add_p("Under the guidance of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=6)
     add_p("Dr. Joe Dhanith P R\nAssociate Professor", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
     add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING (SCOPE)\nVELLORE INSTITUTE OF TECHNOLOGY (VIT), CHENNAI\nDECEMBER, 2025", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=0)
@@ -221,7 +221,7 @@ def build_elaborate_vit_report():
     add_p("", space_after=48)
     add_p("Place: Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
     add_p("Date: December 2025", align=WD_ALIGN_PARAGRAPH.LEFT, size=12, space_after=48)
-    add_p("S.BHAVYA SRI\nReg. No: 22MIA1010", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    add_p("S. BHAVYA SRI\nREGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
     
     doc.add_page_break()
 
@@ -230,7 +230,7 @@ def build_elaborate_vit_report():
     # =========================================================
     add_heading_1("BONAFIDE CERTIFICATE")
     add_p("", space_after=12)
-    add_body("This is to certify that the project report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\" submitted by S.BHAVYA SRI (Reg. No: 22MIA1010) in partial fulfillment of the requirements for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics, to School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai, is a record of bonafide work carried out by her under my supervision and guidance.")
+    add_body("This is to certify that the project report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\" submitted by S. BHAVYA SRI (Register No: 22MIA1010) in partial fulfillment of the requirements for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics, to School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai, is a record of bonafide work carried out by her under my supervision and guidance.")
     
     add_p("", space_after=60)
     add_p("Dr. Joe Dhanith P R", align=WD_ALIGN_PARAGRAPH.LEFT, bold=True, size=12)
@@ -266,7 +266,7 @@ def build_elaborate_vit_report():
     add_body("I am also deeply thankful to all faculty members, technical staff, and peer researchers at SCOPE, VIT Chennai, for their valuable suggestions, insightful technical discussions, and support during my master's program.")
     add_body("Finally, I owe a special debt of gratitude to my family and friends for their unconditional love, continuous moral support, and endless encouragement throughout my academic journey.")
     add_p("", space_after=36)
-    add_p("S.BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    add_p("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
     
     doc.add_page_break()
 
