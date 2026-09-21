@@ -697,51 +697,51 @@ def build_elaborate_vit_report():
     add_body("Proof B.2 (Jacobi Convergence): The GCO quadratic objective matrix B = diag(T) + 2λ L is strictly diagonally dominant because T_i > 0 and L is the positive semi-definite Graph Laplacian. Thus, the Jacobi iteration matrix M = -D_B^(-1) (L_B + U_B) has spectral radius ρ(M) < 1, guaranteeing linear convergence in under 5 iterations.")
     add_page_break()
 
-    # REFERENCES
+    # REFERENCES (IEEE FORMAT)
     add_p("REFERENCES", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
-    refs = [
-        "Al-Sawwa, J., Hassan, M., & Rahman, A. (2024). Consensus-driven distributed intrusion detection systems for enterprise networks. Journal of Network and Computer Applications, 221, 103789.",
-        "Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5-32.",
-        "Chen, L., Wang, Y., & Zhang, X. (2020). DeepIDS: Deep learning for flow-based network intrusion detection. Computers & Security, 97, 101957.",
-        "Das, S., Patel, R., & Verma, K. (2024). Dynamic node trust evaluation in vehicular ad-hoc networks. IEEE Transactions on Intelligent Transportation Systems, 25(4), 3210-3223.",
-        "Denning, D. E. (1987). An intrusion-detection model. IEEE Transactions on Software Engineering, (2), 222-232.",
-        "Eckart, C. (1951). Surface waves on water of variable depth. Wave Report 100, Scripps Institution of Oceanography, University of California, 99.",
-        "Ferguson, E., Davis, M., & Miller, P. (2025). Real-time zero-day intrusion detection in edge networks. IEEE Transactions on Edge Computing, 6(1), 88-101.",
-        "Gupta, V., Sharma, S., & Kumar, P. (2025). Decentralized trust models in autonomous multi-agent networks. IEEE Transactions on Mobile Computing, 24(2), 789-802.",
-        "Hamilton, W., Ying, Z., & Leskovec, J. (2017). Inductive representation learning on large graphs. Advances in Neural Information Processing Systems, 30, 1024-1034.",
-        "Hassan, M., Ali, A., & Ibrahim, K. (2024). Explainable graph neural networks for cyber threat intelligence. IEEE Security & Privacy, 22(1), 45-56.",
-        "Hasselmann, K., Munk, W. H., & MacDonald, G. J. F. (1963). Bispectra of ocean waves. Time Series Analysis, John Wiley & Sons, 125-139.",
-        "Kim, D., Park, S., & Lee, J. (2023). Automated containment planning using multi-agent reinforcement learning. IEEE Transactions on Network and Service Management, 20(2), 1542-1555.",
-        "Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. International Conference on Learning Representations (ICLR).",
-        "Kumar, R., Singh, A., & Ray, S. (2024). Multi-agent reinforcement learning for autonomous network defense. IEEE/ACM Transactions on Networking, 32(1), 412-425.",
-        "Li, X., Zhao, B., & Wang, C. (2023). Trust-aware graph neural networks for Internet of Things security. IEEE Internet of Things Journal, 10(8), 6945-6958.",
-        "Liu, S., Zhang, Y., & Chen, H. (2023). Dynamic graph transformers for real-time network telemetry. IEEE Journal on Selected Areas in Communications, 41(5), 1432-1445.",
-        "Martinez, C., Gomez, F., & Torres, R. (2024). Robustness of graph neural networks under adversarial alert poisoning. IEEE Transactions on Information Forensics and Security, 19, 812-825.",
-        "Park, J., Kim, H., & Cho, Y. (2023). Spatial graph convolutions for destination port anomaly detection. Future Generation Computer Systems, 141, 230-241.",
-        "Patel, A., Kumar, N., & Shah, M. (2021). Heterogeneous graph neural networks for network anomaly detection. Pattern Recognition, 118, 108021.",
-        "Singh, K., Verma, R., & Agarwal, P. (2023). Attention-based alert correlation in security information and event management (SIEM). IEEE Access, 11, 35120-35132.",
-        "Stoker, J. J. (1957). Water waves: The mathematical theory with applications. Interscience Publishers, New York, 520.",
-        "Sun, T., Liu, Y., & Wu, Z. (2021). Iterative Jacobi relaxation methods for quadratic graph optimization. SIAM Journal on Matrix Analysis and Applications, 42(3), 1120-1142.",
-        "Tatavarti, R. V. S. N., & Huntley, D. A. (1987). Wave reflection at beaches. Proceedings of the Canadian Coastal Conference, Quebec City, 241-255.",
-        "Veličković, P., Cucurull, G., Casanova, A., Romero, A., Liò, P., & Bengio, Y. (2018). Graph attention networks. International Conference on Learning Representations (ICLR).",
-        "Wallace, J. M., & Dickinson, R. E. (1972). Empirical orthogonal representation of time series in the frequency domain. Journal of Applied Meteorology, 11(6), 887-892.",
-        "Wang, H., Zhao, M., & Li, Y. (2023). GraphDIDS: Distributed graph neural network for intrusion detection in enterprise networks. IEEE Transactions on Dependable and Secure Computing, 20(3), 2341-2354.",
-        "Wu, Q., Zhang, L., & Tan, X. (2021). Inductive representation learning on dynamic traffic graphs. ACM Transactions on Intelligent Systems and Technology, 12(6), 1-22.",
-        "Xu, B., Zhao, K., & Sun, L. (2022). Metric learning and prototype networks for unknown network attacks. Computer Networks, 205, 108754.",
-        "Yang, Z., Liu, X., & Zhou, W. (2022). Graph episodic memory for continual anomaly detection. IEEE Transactions on Knowledge and Data Engineering, 34(11), 5412-5425.",
-        "Zhang, J., Wang, R., & Chen, Y. (2022). Zero-day intrusion detection via open-set pattern recognition. IEEE Transactions on Cybernetics, 52(9), 9821-9834.",
-        "Zhao, Y., Li, Q., & Wang, J. (2022). Temporal graph architecture for dynamic network intrusion detection. IEEE Transactions on Information Forensics and Security, 17, 1892-1905.",
-        "Zhou, M., Zhang, K., & Liu, P. (2021). E-GraphSAGE: A graph neural network for edge-centric intrusion detection. IEEE Transactions on Network and Service Management, 18(4), 4210-4222."
+    refs_ieee = [
+        "[1] J. Al-Sawwa, M. Hassan, and A. Rahman, \"Consensus-driven distributed intrusion detection systems for enterprise networks,\" Journal of Network and Computer Applications, vol. 221, p. 103789, 2024.",
+        "[2] L. Breiman, \"Random forests,\" Machine Learning, vol. 45, no. 1, pp. 5–32, 2001.",
+        "[3] L. Chen, Y. Wang, and X. Zhang, \"DeepIDS: Deep learning for flow-based network intrusion detection,\" Computers & Security, vol. 97, p. 101957, 2020.",
+        "[4] S. Das, R. Patel, and K. Verma, \"Dynamic node trust evaluation in vehicular ad-hoc networks,\" IEEE Transactions on Intelligent Transportation Systems, vol. 25, no. 4, pp. 3210–3223, 2024.",
+        "[5] D. E. Denning, \"An intrusion-detection model,\" IEEE Transactions on Software Engineering, no. 2, pp. 222–232, 1987.",
+        "[6] C. Eckart, \"Surface waves on water of variable depth,\" Wave Report 100, Scripps Institution of Oceanography, University of California, p. 99, 1951.",
+        "[7] E. Ferguson, M. Davis, and P. Miller, \"Real-time zero-day intrusion detection in edge networks,\" IEEE Transactions on Edge Computing, vol. 6, no. 1, pp. 88–101, 2025.",
+        "[8] V. Gupta, S. Sharma, and P. Kumar, \"Decentralized trust models in autonomous multi-agent networks,\" IEEE Transactions on Mobile Computing, vol. 24, no. 2, pp. 789–802, 2025.",
+        "[9] W. Hamilton, Z. Ying, and J. Leskovec, \"Inductive representation learning on large graphs,\" in Advances in Neural Information Processing Systems (NeurIPS), vol. 30, pp. 1024–1034, 2017.",
+        "[10] M. Hassan, A. Ali, and K. Ibrahim, \"Explainable graph neural networks for cyber threat intelligence,\" IEEE Security & Privacy, vol. 22, no. 1, pp. 45–56, 2024.",
+        "[11] K. Hasselmann, W. H. Munk, and G. J. F. MacDonald, \"Bispectra of ocean waves,\" in Time Series Analysis, M. Rosenblatt, Ed., New York: John Wiley & Sons, pp. 125–139, 1963.",
+        "[12] D. Kim, S. Park, and J. Lee, \"Automated containment planning using multi-agent reinforcement learning,\" IEEE Transactions on Network and Service Management, vol. 20, no. 2, pp. 1542–1555, 2023.",
+        "[13] T. N. Kipf and M. Welling, \"Semi-supervised classification with graph convolutional networks,\" in Proc. Int. Conf. Learn. Represent. (ICLR), 2017.",
+        "[14] R. Kumar, A. Singh, and S. Ray, \"Multi-agent reinforcement learning for autonomous network defense,\" IEEE/ACM Transactions on Networking, vol. 32, no. 1, pp. 412–425, 2024.",
+        "[15] X. Li, B. Zhao, and C. Wang, \"Trust-aware graph neural networks for Internet of Things security,\" IEEE Internet of Things Journal, vol. 10, no. 8, pp. 6945–6958, 2023.",
+        "[16] S. Liu, Y. Zhang, and H. Chen, \"Dynamic graph transformers for real-time network telemetry,\" IEEE Journal on Selected Areas in Communications, vol. 41, no. 5, pp. 1432–1445, 2023.",
+        "[17] C. Martinez, F. Gomez, and R. Torres, \"Robustness of graph neural networks under adversarial alert poisoning,\" IEEE Transactions on Information Forensics and Security, vol. 19, pp. 812–825, 2024.",
+        "[18] J. Park, H. Kim, and Y. Cho, \"Spatial graph convolutions for destination port anomaly detection,\" Future Generation Computer Systems, vol. 141, pp. 230–241, 2023.",
+        "[19] A. Patel, N. Kumar, and M. Shah, \"Heterogeneous graph neural networks for network anomaly detection,\" Pattern Recognition, vol. 118, p. 108021, 2021.",
+        "[20] K. Singh, R. Verma, and P. Agarwal, \"Attention-based alert correlation in security information and event management (SIEM),\" IEEE Access, vol. 11, pp. 35120–35132, 2023.",
+        "[21] J. J. Stoker, Water Waves: The Mathematical Theory with Applications. New York: Interscience Publishers, p. 520, 1957.",
+        "[22] T. Sun, Y. Liu, and Z. Wu, \"Iterative Jacobi relaxation methods for quadratic graph optimization,\" SIAM Journal on Matrix Analysis and Applications, vol. 42, no. 3, pp. 1120–1142, 2021.",
+        "[23] R. V. S. N. Tatavarti and D. A. Huntley, \"Wave reflection at beaches,\" in Proc. Canadian Coastal Conf., Quebec City, pp. 241–255, 1987.",
+        "[24] P. Veličković, G. Cucurull, A. Casanova, A. Romero, P. Liò, and Y. Bengio, \"Graph attention networks,\" in Proc. Int. Conf. Learn. Represent. (ICLR), 2018.",
+        "[25] J. M. Wallace and R. E. Dickinson, \"Empirical orthogonal representation of time series in the frequency domain,\" Journal of Applied Meteorology, vol. 11, no. 6, pp. 887–892, 1972.",
+        "[26] H. Wang, M. Zhao, and Y. Li, \"GraphDIDS: Distributed graph neural network for intrusion detection in enterprise networks,\" IEEE Transactions on Dependable and Secure Computing, vol. 20, no. 3, pp. 2341–2354, 2023.",
+        "[27] Q. Wu, L. Zhang, and X. Tan, \"Inductive representation learning on dynamic traffic graphs,\" ACM Transactions on Intelligent Systems and Technology, vol. 12, no. 6, pp. 1–22, 2021.",
+        "[28] B. Xu, K. Zhao, and L. Sun, \"Metric learning and prototype networks for unknown network attacks,\" Computer Networks, vol. 205, p. 108754, 2022.",
+        "[29] Z. Yang, X. Liu, and W. Zhou, \"Graph episodic memory for continual anomaly detection,\" IEEE Transactions on Knowledge and Data Engineering, vol. 34, no. 11, pp. 5412–5425, 2022.",
+        "[30] J. Zhang, R. Wang, and Y. Chen, \"Zero-day intrusion detection via open-set pattern recognition,\" IEEE Transactions on Cybernetics, vol. 52, no. 9, pp. 9821–9834, 2022.",
+        "[31] Y. Zhao, Q. Li, and J. Wang, \"Temporal graph architecture for dynamic network intrusion detection,\" IEEE Transactions on Information Forensics and Security, vol. 17, pp. 1892–1905, 2022.",
+        "[32] M. Zhou, K. Zhang, and P. Liu, \"E-GraphSAGE: A graph neural network for edge-centric intrusion detection,\" IEEE Transactions on Network and Service Management, vol. 18, no. 4, pp. 4210–4222, 2021."
     ]
-    for ref in refs:
+    for ref in refs_ieee:
         p = doc.add_paragraph()
         p.paragraph_format.line_spacing = 1.15
         p.paragraph_format.space_after = Pt(6)
-        p.paragraph_format.left_indent = Inches(0.5)
-        p.paragraph_format.first_line_indent = Inches(-0.5)
+        p.paragraph_format.left_indent = Inches(0.4)
+        p.paragraph_format.first_line_indent = Inches(-0.4)
         run_r = p.add_run(ref)
         run_r.font.name = "Times New Roman"
-        run_r.font.size = Pt(12)
+        run_r.font.size = Pt(11)
 
     output_filename = "/Users/bhavya/.gemini/antigravity/scratch/atgc-macids/ATGC_MACIDS_Elaborate_Project_Report.docx"
     doc.save(output_filename)
