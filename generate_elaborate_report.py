@@ -86,7 +86,7 @@ def build_elaborate_vit_report():
     # 3. DECLARATION BY CANDIDATE
     # =========================================================
     add_p("DECLARATION", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
-    add_body("I hereby declare that the thesis entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. [GUIDE_NAME].")
+    add_body("I hereby declare that the thesis entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. Joe Dhanith P R.")
     add_body("I further declare that the work reported in this thesis has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.")
     
     add_p("Place: Chennai", size=14, space_before=30)
@@ -103,7 +103,7 @@ def build_elaborate_vit_report():
     add_body("This is to certify that the report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" is prepared and submitted by BHAVYA REDDY (Reg No: [REGISTER_NUMBER]) to Vellore Institute of Technology, Chennai, in partial fulfillment of the requirement for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics programme is a bonafide record carried out under my guidance. The project fulfills the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma and the same is certified.")
     
     add_p("Signature of the Guide: _____________________", size=12, space_before=20, space_after=5)
-    add_p("Name: Dr. [GUIDE_NAME]", size=12, space_after=5)
+    add_p("Name: Dr. Joe Dhanith P R", size=12, space_after=5)
     add_p("Designation: Associate Professor / Professor, SCOPE", size=12, space_after=5)
     add_p("Date: _____________________", size=12, space_after=30)
     
@@ -127,7 +127,7 @@ def build_elaborate_vit_report():
     # 6. ACKNOWLEDGEMENT
     # =========================================================
     add_p("ACKNOWLEDGEMENT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
-    add_body("It is my pleasure to express with a deep sense of gratitude to Dr. [GUIDE_NAME], Associate Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his/her constant guidance, continual encouragement, and understanding; more than all, he/she taught me patience in my endeavour. My association with him/her is not confined to academics only, but it is a great opportunity for my part of work to interact with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
+    add_body("It is my pleasure to express with a deep sense of gratitude to Dr. Joe Dhanith P R, Associate Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his/her constant guidance, continual encouragement, and understanding; more than all, he/she taught me patience in my endeavour. My association with him/her is not confined to academics only, but it is a great opportunity for my part of work to interact with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
     add_body("It is with gratitude that I would like to extend my thanks to the visionary leader Dr. G. Viswanathan our Honourable Chancellor, Mr. Sankar Viswanathan, Dr. Sekar Viswanathan, Dr. G V Selvam Vice Presidents, Dr. Sandhya Pentareddy, Executive Director, Ms. Kadhambari S. Viswanathan, Assistant Vice-President, Dr. V. S. Kanchana Bhaaskaran Vice-Chancellor, and Dr. T. Thyagarajan Pro-Vice Chancellor, VIT Chennai for providing an exceptional working environment and inspiring all of us during the tenure of the course.")
     add_body("Special mention to Dr. Viswanathan V, Dean, Dr. Nithyanandam P, Dr. Suganya G, and Dr. Sweetlin Hemalatha C, Associate Deans, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for spending their valuable time and efforts in sharing their knowledge and for helping us in every aspect.")
     add_body("In jubilant state, I express ingeniously my whole-hearted thanks to the Head of the Department, SCOPE, Vellore Institute of Technology, Chennai, for their valuable support and encouragement to take up and complete the thesis.")

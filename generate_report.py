@@ -90,7 +90,7 @@ def create_vit_report():
     # ---------------------------------------------------------
     add_para("DECLARATION", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
     
-    p_dec = add_para("I hereby declare that the thesis entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. [GUIDE_NAME].", space_before=10, space_after=15)
+    p_dec = add_para("I hereby declare that the thesis entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. Joe Dhanith P R.", space_before=10, space_after=15)
     p_dec.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     p_dec2 = add_para("I further declare that the work reported in this thesis has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.", space_before=10, space_after=40)
@@ -113,7 +113,7 @@ def create_vit_report():
     p_cert.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     add_para("Signature of the Guide: _____________________", size=12, space_after=5)
-    add_para("Name: Dr. [GUIDE_NAME]", size=12, space_after=5)
+    add_para("Name: Dr. Joe Dhanith P R", size=12, space_after=5)
     add_para("Designation: Associate Professor / Professor, SCOPE", size=12, space_after=5)
     add_para("Date: _____________________", size=12, space_after=30)
     
@@ -148,7 +148,7 @@ def create_vit_report():
     # ---------------------------------------------------------
     add_para("ACKNOWLEDGEMENT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
     
-    p_ack1 = add_para("It is my pleasure to express with a deep sense of gratitude to Dr. [GUIDE_NAME], Associate Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his/her constant guidance, continual encouragement, and understanding; more than all, he/she taught me patience in my endeavour. My association with him/her is not confined to academics only, but it is a great opportunity for my part of work to interact with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
+    p_ack1 = add_para("It is my pleasure to express with a deep sense of gratitude to Dr. Joe Dhanith P R, Associate Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his/her constant guidance, continual encouragement, and understanding; more than all, he/she taught me patience in my endeavour. My association with him/her is not confined to academics only, but it is a great opportunity for my part of work to interact with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
     p_ack1.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     p_ack2 = add_para("It is with gratitude that I would like to extend my thanks to the visionary leader Dr. G. Viswanathan our Honourable Chancellor, Mr. Sankar Viswanathan, Dr. Sekar Viswanathan, Dr. G V Selvam Vice Presidents, Dr. Sandhya Pentareddy, Executive Director, Ms. Kadhambari S. Viswanathan, Assistant Vice-President, Dr. V. S. Kanchana Bhaaskaran Vice-Chancellor, and Dr. T. Thyagarajan Pro-Vice Chancellor, VIT Chennai for providing an exceptional working environment and inspiring all of us during the tenure of the course.")
