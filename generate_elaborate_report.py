@@ -291,62 +291,62 @@ def build_elaborate_vit_report():
         ["  1.1 Background and Domain Overview", "1"],
         ["  1.2 Intrusion Detection in High-Throughput Networks", "3"],
         ["  1.3 Threat Landscape and Attack Vectors in Modern Enterprise Subnets", "5"],
-        ["  1.4 Limitations of Signature and Traditional Machine Learning IDS", "8"],
-        ["  1.5 Graph Neural Networks in Cybersecurity: Opportunities and Vulnerabilities", "11"],
-        ["  1.6 Vulnerabilities to Adversarial Perturbations & Dynamic Topology", "13"],
-        ["  1.7 Problem Statement", "15"],
-        ["  1.8 Research Objectives & Key Contributions", "16"],
-        ["  1.9 Organization of the Thesis Report", "17"],
+        ["  1.4 Limitations of Signature and Traditional Machine Learning IDS", "7"],
+        ["  1.5 Graph Neural Networks in Cybersecurity: Opportunities and Vulnerabilities", "9"],
+        ["  1.6 Vulnerabilities to Adversarial Perturbations & Dynamic Topology", "11"],
+        ["  1.7 Problem Statement", "12"],
+        ["  1.8 Research Objectives & Key Contributions", "13"],
+        ["  1.9 Organization of the Thesis Report", "14"],
         ["", ""],
-        ["CHAPTER 2: LITERATURE REVIEW & RELATED WORK", "18"],
-        ["  2.1 Historical Evolution of Network Anomaly Detection (1987-2025)", "18"],
-        ["  2.2 Comparative Analysis of Shallow ML vs Deep Sequential Models", "21"],
-        ["  2.3 Graph Neural Networks in Network Security (GCN, GAT, Dynamic Graphs)", "24"],
-        ["  2.4 Multi-Agent Systems & Distributed Consensus Protocols", "27"],
-        ["  2.5 Adaptive Trust Evaluation, Reputation Metrics & Sybil Defense", "30"],
-        ["  2.6 Explainable AI (XAI) & Threat Knowledge Graph Mapping", "32"],
-        ["  2.7 Literature Gap Analysis & Summary Table", "34"],
+        ["CHAPTER 2: LITERATURE REVIEW & RELATED WORK", "15"],
+        ["  2.1 Historical Evolution of Network Anomaly Detection (1987-2025)", "15"],
+        ["  2.2 Comparative Analysis of Shallow ML vs Deep Sequential Models", "18"],
+        ["  2.3 Graph Neural Networks in Network Security (GCN, GAT, Dynamic Graphs)", "20"],
+        ["  2.4 Multi-Agent Systems & Distributed Consensus Protocols", "23"],
+        ["  2.5 Adaptive Trust Evaluation, Reputation Metrics & Sybil Defense", "25"],
+        ["  2.6 Explainable AI (XAI) & Threat Knowledge Graph Mapping", "27"],
+        ["  2.7 Literature Gap Analysis & Summary Table", "28"],
         ["", ""],
-        ["CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY (ATGC-MACIDS)", "36"],
-        ["  3.1 Overview of the ATGC-MACIDS Paradigm", "36"],
-        ["  3.2 Dynamic Network Graph Construction & Temporal Graph Snapshots", "39"],
-        ["  3.3 Multi-Agent Architecture & Local Perception Nodes", "42"],
-        ["  3.4 Deep Temporal GNN Encoder (ST-GAT Architecture)", "44"],
-        ["  3.5 Adaptive Trust Evaluation Engine & Dynamic Reputation Scoring", "48"],
-        ["  3.6 Jacobi Consensus Protocol & Distributed Vector Agreement", "51"],
-        ["  3.7 Optimization Objective & Dual Loss Functions", "54"],
-        ["  3.8 MITRE ATT&CK Threat Knowledge Graph Mapping Engine", "56"],
-        ["  3.9 System Implementation & Algorithmic Pseudocode", "57"],
+        ["CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY (ATGC-MACIDS)", "30"],
+        ["  3.1 Overview of the ATGC-MACIDS Paradigm", "30"],
+        ["  3.2 Dynamic Network Graph Construction & Temporal Graph Snapshots", "32"],
+        ["  3.3 Multi-Agent Architecture & Local Perception Nodes", "35"],
+        ["  3.4 Deep Temporal GNN Encoder (ST-GAT Architecture)", "37"],
+        ["  3.5 Adaptive Trust Evaluation Engine & Dynamic Reputation Scoring", "40"],
+        ["  3.6 Jacobi Consensus Protocol & Distributed Vector Agreement", "42"],
+        ["  3.7 Optimization Objective & Dual Loss Functions", "44"],
+        ["  3.8 MITRE ATT&CK Threat Knowledge Graph Mapping Engine", "45"],
+        ["  3.9 System Implementation & Algorithmic Pseudocode", "46"],
         ["", ""],
-        ["CHAPTER 4: EXPERIMENTAL EVALUATION & RESULTS", "59"],
-        ["  4.1 Benchmark Dataset Characterization (UNSW-NB15)", "59"],
-        ["  4.2 Data Preprocessing, Scaling & Graph Snapshot Partitioning", "62"],
-        ["  4.3 Experimental Setup, Hardware/Software Infrastructure & Hyperparameters", "64"],
-        ["  4.4 Baseline Models for Comparative Evaluation", "66"],
-        ["  4.5 Quantitative Evaluation: Detection Accuracy & Metrics", "67"],
-        ["  4.6 Robustness Analysis Against Adversarial Graph Attacks & Sybil Nodes", "71"],
-        ["  4.7 Latency, Scalability, and Consensus Iteration Convergence Analysis", "73"],
-        ["  4.8 Ablation Studies (ST-GAT, Trust Engine, Consensus Layers)", "75"],
+        ["CHAPTER 4: EXPERIMENTAL EVALUATION & RESULTS", "48"],
+        ["  4.1 Benchmark Dataset Characterization (UNSW-NB15)", "48"],
+        ["  4.2 Data Preprocessing, Scaling & Graph Snapshot Partitioning", "50"],
+        ["  4.3 Experimental Setup, Hardware/Software Infrastructure & Hyperparameters", "52"],
+        ["  4.4 Baseline Models for Comparative Evaluation", "53"],
+        ["  4.5 Quantitative Evaluation: Detection Accuracy & Metrics", "54"],
+        ["  4.6 Robustness Analysis Against Adversarial Graph Attacks & Sybil Nodes", "57"],
+        ["  4.7 Latency, Scalability, and Consensus Iteration Convergence Analysis", "59"],
+        ["  4.8 Ablation Studies (ST-GAT, Trust Engine, Consensus Layers)", "60"],
         ["", ""],
-        ["CHAPTER 5: DISCUSSION, THREAT EXPLAINABILITY & SYSTEM DEPLOYMENT", "77"],
-        ["  5.1 In-Depth Analysis of Experimental Findings", "77"],
-        ["  5.2 Model Interpretability via Feature Saliency & Node Attribution", "79"],
-        ["  5.3 Automated Mapping of Detected Anomalies to MITRE ATT&CK TTPs", "81"],
-        ["  5.4 Enterprise SIEM Integration, Real-Time Dashboard Architecture", "83"],
-        ["  5.5 Operational Security & Deployment Considerations", "85"],
+        ["CHAPTER 5: DISCUSSION, THREAT EXPLAINABILITY & SYSTEM DEPLOYMENT", "62"],
+        ["  5.1 In-Depth Analysis of Experimental Findings", "62"],
+        ["  5.2 Model Interpretability via Feature Saliency & Node Attribution", "64"],
+        ["  5.3 Automated Mapping of Detected Anomalies to MITRE ATT&CK TTPs", "66"],
+        ["  5.4 Enterprise SIEM Integration, Real-Time Dashboard Architecture", "68"],
+        ["  5.5 Operational Security & Deployment Considerations", "70"],
         ["", ""],
-        ["CHAPTER 6: CONCLUSION & FUTURE WORK", "87"],
-        ["  6.1 Summary of Research Contributions", "87"],
-        ["  6.2 Key Empirical Takeaways", "88"],
-        ["  6.3 Limitations of the Current Study", "89"],
-        ["  6.4 Directions for Future Research", "90"],
+        ["CHAPTER 6: CONCLUSION & FUTURE WORK", "71"],
+        ["  6.1 Summary of Research Contributions", "71"],
+        ["  6.2 Key Empirical Takeaways", "72"],
+        ["  6.3 Limitations of the Current Study", "73"],
+        ["  6.4 Directions for Future Research", "74"],
         ["", ""],
-        ["APPENDICES", "91"],
-        ["  Appendix A: Mathematical Proofs & Convergence Analysis", "91"],
-        ["  Appendix B: Core Algorithmic Code Implementation Listings", "94"],
-        ["  Appendix C: UNSW-NB15 Dataset Feature Definitions & Schemas", "97"],
+        ["APPENDICES", "75"],
+        ["  Appendix A: Mathematical Proofs & Convergence Analysis", "75"],
+        ["  Appendix B: Core Algorithmic Code Implementation Listings", "77"],
+        ["  Appendix C: UNSW-NB15 Dataset Feature Definitions & Schemas", "79"],
         ["", ""],
-        ["REFERENCES (IEEE Citation Format)", "99"]
+        ["REFERENCES (IEEE Citation Format)", "81"]
     ]
     
     for item, pg in toc_data:
@@ -382,18 +382,18 @@ def build_elaborate_vit_report():
     add_p("", space_after=6)
     
     fig_data = [
-        ["Figure 3.1", "High-Level System Architecture of the ATGC-MACIDS Framework", "37"],
-        ["Figure 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Encoder Architecture", "45"],
-        ["Figure 3.3", "Adaptive Trust Evaluation Engine & Dynamic Peer Reputation Scoring Workflow", "49"],
-        ["Figure 4.1", "Training & Validation Loss / Accuracy Curves over 15 Epochs on UNSW-NB15", "68"],
-        ["Figure 4.2", "Confusion Matrix of Multi-Class Intrusion Detection Performance", "69"],
-        ["Figure 4.3", "Receiver Operating Characteristic (ROC) and Precision-Recall Curves", "70"],
-        ["Figure 4.4", "Comparative Benchmark Performance across Baseline Models", "71"],
-        ["Figure 4.5", "Detection Accuracy under Increasing Ratio of Compromised Adversarial Nodes", "72"],
-        ["Figure 4.6", "Jacobi Consensus Vector Residual Error Convergence across Iterations", "74"],
-        ["Figure 5.1", "Global Feature Saliency and SHAP Feature Attribution Ranking", "80"],
-        ["Figure 5.2", "Cyber Threat Knowledge Graph (CT-KG) Mapped to MITRE ATT&CK Matrix", "82"],
-        ["Figure 5.3", "Interactive Enterprise Web Dashboard & Real-Time SIEM Monitoring Interface", "84"]
+        ["Figure 3.1", "High-Level System Architecture of the ATGC-MACIDS Framework", "31"],
+        ["Figure 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Encoder Architecture", "38"],
+        ["Figure 3.3", "Adaptive Trust Evaluation Engine & Dynamic Peer Reputation Scoring Workflow", "41"],
+        ["Figure 4.1", "Training & Validation Loss / Accuracy Curves over 15 Epochs on UNSW-NB15", "55"],
+        ["Figure 4.2", "Confusion Matrix of Multi-Class Intrusion Detection Performance", "55"],
+        ["Figure 4.3", "Receiver Operating Characteristic (ROC) and Precision-Recall Curves", "56"],
+        ["Figure 4.4", "Comparative Benchmark Performance across Baseline Models", "56"],
+        ["Figure 4.5", "Detection Accuracy under Increasing Ratio of Compromised Adversarial Nodes", "58"],
+        ["Figure 4.6", "Jacobi Consensus Vector Residual Error Convergence across Iterations", "59"],
+        ["Figure 5.1", "Global Feature Saliency and SHAP Feature Attribution Ranking", "65"],
+        ["Figure 5.2", "Cyber Threat Knowledge Graph (CT-KG) Mapped to MITRE ATT&CK Matrix", "67"],
+        ["Figure 5.3", "Interactive Enterprise Web Dashboard & Real-Time SIEM Monitoring Interface", "69"]
     ]
     
     for fig_id, caption, pg in fig_data:
@@ -423,15 +423,15 @@ def build_elaborate_vit_report():
     add_p("", space_after=6)
     
     tbl_list_data = [
-        ["Table 2.1", "Comprehensive Literature Comparison Matrix of NIDS Paradigms", "35"],
-        ["Table 3.1", "Dynamic Graph Mathematical Notations and Variable Definitions", "40"],
-        ["Table 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Hyperparameters", "46"],
-        ["Table 4.1", "UNSW-NB15 Dataset Traffic Distribution across 9 Attack Categories", "60"],
-        ["Table 4.2", "Hardware & Software Experimental Execution Environment", "65"],
-        ["Table 4.3", "Quantitative Performance Benchmark of Baseline vs. ATGC-MACIDS", "68"],
-        ["Table 4.4", "Per-Category Intrusion Detection Metrics on UNSW-NB15 Test Partition", "70"],
-        ["Table 4.5", "Ablation Study of ATGC-MACIDS Architectural Components", "76"],
-        ["Table C.1", "Complete Feature Schema and Description of UNSW-NB15 Telemetry", "97"]
+        ["Table 2.1", "Comprehensive Literature Comparison Matrix of NIDS Paradigms", "29"],
+        ["Table 3.1", "Dynamic Graph Mathematical Notations and Variable Definitions", "33"],
+        ["Table 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Hyperparameters", "39"],
+        ["Table 4.1", "UNSW-NB15 Dataset Traffic Distribution across 9 Attack Categories", "49"],
+        ["Table 4.2", "Hardware & Software Experimental Execution Environment", "52"],
+        ["Table 4.3", "Quantitative Performance Benchmark of Baseline vs. ATGC-MACIDS", "54"],
+        ["Table 4.4", "Per-Category Intrusion Detection Metrics on UNSW-NB15 Test Partition", "56"],
+        ["Table 4.5", "Ablation Study of ATGC-MACIDS Architectural Components", "61"],
+        ["Table C.1", "Complete Feature Schema and Description of UNSW-NB15 Telemetry", "80"]
     ]
     
     for tbl_id, caption, pg in tbl_list_data:
@@ -509,6 +509,11 @@ def build_elaborate_vit_report():
     add_body("Enterprise organizations increasingly adopt Zero-Trust Network Architecture (ZTNA), operating under the core principle of 'never trust, always verify.' Under ZTNA, internal subnets can no longer be assumed secure. Consequently, monitoring intra-subnet host traffic flows is as critical as monitoring perimeter ingress/egress boundaries. In this environment, intrusion detection must operate continuously across every internal subnet segment.")
     add_body("Furthermore, the volume of security alerts generated by enterprise SOC tools leads to severe alert fatigue. Security analysts are routinely overwhelmed by thousands of daily alerts, over 80% of which are benign false positives. This operational bottleneck delays response times during active cyber incidents. Therefore, modern intrusion detection systems must achieve exceptional precision and low false positive rates while providing human-interpretable root cause explanations.")
 
+    
+    add_body("The complexity of modern enterprise networks requires treating host systems not merely as standalone IP addresses, but as interdependent entities within a complex communication graph. Every network connection—whether an HTTP GET request, a database query over TCP, or a DNS resolution over UDP—carries relational context. Capturing this topological context requires moving beyond flat tabular classification toward graph-centric neural architectures.")
+    add_body("In high-speed enterprise networks processing 10Gbps+ traffic streams, traditional deep packet inspection (DPI) creates unacceptable latency bottlenecks. Security operations centers must analyze flow summary telemetry (NetFlow/IPFIX) that summarizes traffic into bi-directional records (source/destination IP, ports, protocols, packet counts, and byte volumes). Converting NetFlow streams into dynamic spatio-temporal attributed graphs allows intrusion detection models to analyze structural neighborhood dynamics without decrypting packet payloads.")
+    add_body("Decentralized multi-agent systems eliminate the single-point-of-failure vulnerabilities and bandwidth congestion inherent in centralized SIEM architectures. Local perception agents operate within individual subnet domains, executing localized GNN feature extraction and collaborating via peer-to-peer consensus protocols. This localized processing preserves data privacy and ensures continuous monitoring even if core SIEM connectivity is interrupted.")
+
     add_heading_2("1.2 Intrusion Detection in High-Throughput Networks")
     add_body("Operating NIDS in modern enterprise environments presents severe technical challenges stemming from network throughput, data heterogeneity, and architectural centralization. Enterprise backbones operating at 10 Gbps, 40 Gbps, or 100 Gbps stream millions of packets per second. Performing deep packet inspection (DPI) at line rate incurs prohibitive computational overhead, creating processing bottlenecks, packet drops, and unacceptable latency spikes for mission-critical applications.")
     add_body("To overcome the computational cost of DPI, enterprise SOCs rely on flow-level NetFlow/IPFIX telemetry, aggregating packet bursts into bi-directional traffic summaries (e.g., source IP, destination IP, port numbers, protocol, flow duration, packet count, and byte volume). However, analyzing massive flow records across distributed enterprise subnets introduces severe architectural trade-offs between centralized data aggregation and local detection processing.")
@@ -578,6 +583,12 @@ def build_elaborate_vit_report():
     add_body("Network anomaly detection has been an active domain of computer science research for nearly four decades. The foundational conceptual model for intrusion detection was introduced by Dorothy Denning in 1987 [5]. Denning's model proposed auditing system event logs and computing statistical profiles (mean, standard deviation, threshold counts) to identify anomalous user activity. Early commercial NIDS developed throughout the 1990s—such as RealSecure and Snort—relied heavily on expert-crafted heuristic rule sets and string-matching engines. However, as enterprise network speeds expanded exponentially and malicious payloads evolved evasive capabilities, rule-based engines proved rigid, requiring constant manual updates by cybersecurity experts and failing to detect novel zero-day exploits.")
     add_body("With the release of standard benchmark datasets—such as KDD Cup 99, NSL-KDD, and UNSW-NB15—researchers shifted focus toward machine learning paradigms capable of automatically extracting statistical feature representations from network flow telemetry.")
     add_body("Over the past decade, intrusion detection benchmarks evolved significantly. The legacy KDD Cup 99 dataset suffered from severe duplicate record bias and synthetic traffic artifacts. NSL-KDD mitigated duplicate records but retained outdated 1990s network topology. UNSW-NB15, created by Moustafa & Slay (2015) [16], established a modern standard by capturing complex synthetic attack vectors mixed with real low-footprint background traffic.")
+
+    
+    add_body("Historical research in network anomaly detection reflects an evolution from simple statistical thresholding to complex deep learning models. Early systems, such as Snort and Suricata, relied on pattern matching against static signature databases. While effective against known threats, signature engines fail to detect novel zero-day exploits or obfuscated attack payloads. This limitation drove the adoption of machine learning classifiers capable of learning baseline profiles of normal network behavior.")
+    add_body("Shallow machine learning algorithms—including Decision Trees, Support Vector Machines (SVM), Naive Bayes, and Random Forests—achieved high precision on static benchmark datasets like KDD Cup 99 and NSL-KDD. However, shallow models require manual feature engineering and treat network traffic flows as isolated tabular rows. By ignoring topological connections between hosts and temporal packet sequences, shallow models suffer high false positive rates during benign traffic bursts.")
+    add_body("Deep recurrent models (LSTM, GRU) and Transformer architectures introduced sequential modeling capabilities to capture multi-packet temporal patterns. However, sequential models operate on individual host streams in isolation, remaining blind to cross-subnet lateral movement and multi-host attack topologies. Furthermore, the quadratic computational complexity of Transformers prevents line-rate inference in 10Gbps+ enterprise backbones.")
+    add_body("Graph Neural Networks (GNNs) address these limitations by modeling host entities as graph nodes and flow interactions as directed edges. Graph Convolutional Networks (GCN) and Graph Attention Networks (GAT) aggregate spatial neighborhood features to detect structural anomalies. However, existing GNN intrusion detection models operate in centralized configurations, making them vulnerable to central server failures, bandwidth bottlenecks, and adversarial graph topology manipulation.")
 
     add_heading_2("2.2 Comparative Analysis of Shallow ML vs Deep Sequential Models")
     add_body("The application of machine learning to NIDS gained significant traction in the 2000s. Shallow classifiers—including Naive Bayes, Decision Trees, Support Vector Machines (SVM), and Random Forests—demonstrated high diagnostic precision on static tabular benchmarks. Random Forests, introduced by Breiman (2001) [2], became the gold standard for tabular flow classification due to ensemble decision tree aggregation, feature bagging, and resistance to overfitting. However, shallow ML models require laborious manual feature engineering and operate under the strong assumption that traffic samples are independent and identically distributed (i.i.d.), completely ignoring temporal correlations across consecutive packets.")
@@ -660,6 +671,12 @@ def build_elaborate_vit_report():
         ["L_detect, L_consensus", "Primary multi-class cross-entropy detection loss and Jacobi consensus alignment loss"]
     ]
     add_custom_table(["Notation", "Description & Mathematical Definition"], math_notations)
+
+    
+    add_body("The ATGC-MACIDS methodology integrates four interconnected modules: (1) Dynamic Spatio-Temporal Graph Construction, (2) Deep ST-GAT Feature Encoding, (3) Adaptive Trust Peer Reputation Engine, and (4) Jacobi Vector Consensus Protocol. Each module is designed to resolve specific operational challenges in enterprise network security.")
+    add_body("Dynamic Graph Construction transforms NetFlow telemetry into continuous sequence of attributed graph snapshots G_t = (V_t, E_t, X_t) over sliding 500ms time windows. Node features encompass 49 statistical flow attributes, including packet counts, byte volumes, flow durations, port entropy, and TCP state TTL metrics. Edges represent directed communication flows between host pairs, weighted by traffic volume and flow frequency.")
+    add_body("The ST-GAT encoder combines multi-head spatial self-attention with Gated Recurrent Units (GRU). Spatial attention layers compute dynamic attention weights alpha_ij between host nodes, enabling the model to focus on suspicious interaction edges while suppressing benign background noise. The temporal GRU module tracks state updates across consecutive graph snapshots, capturing multi-stage attack evolution such as low-and-slow reconnaissance preceding a volumetric DoS flood.")
+    add_body("The Adaptive Trust Engine dynamically evaluates peer agent reputation matrix T_ij(t) based on spatial prediction similarity, historical alert fidelity, and alert vector entropy. Peer agents exhibiting anomalous alert patterns or broadcasting corrupt vectors are assigned reduced trust weights. If peer trust drops below threshold T_thresh = 0.35, consensus edges are severed, isolating compromised or Sybil nodes from corrupting the global alert consensus.")
 
     add_heading_2("3.3 Multi-Agent Architecture & Local Perception Nodes")
     add_body("The enterprise network is partitioned into local perception domains, each managed by an autonomous software agent. Agents capture local NetFlow packets, maintain local graph snapshots, compute localized threat embeddings using ST-GAT, and communicate consensus alert vectors with neighboring domain agents over secure peer-to-peer channels.")
@@ -781,6 +798,12 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
     ]
     add_custom_table(["Category", "Attack Mechanism", "Train Flows", "Test Flows", "Total Flows", "Share (%)"], unsw_dist)
 
+    
+    add_body("Empirical validation of ATGC-MACIDS was conducted on the UNSW-NB15 benchmark dataset, comprising 257,673 flow records partitioned into 175,341 training flows and 82,332 test flows across 9 attack categories. Preprocessing steps included categorical feature encoding, log-transformation of skewed counters, and MinMax scaling to [0, 1]. Continuous records were structured into 172 temporal graph snapshots.")
+    add_body("Experimental results demonstrate that ATGC-MACIDS achieves 96.40% Overall Accuracy, 96.15% F1-Score, 96.75% Precision, 95.55% Recall, and 0.9820 ROC-AUC, outperforming Random Forest (92.50%), DeepIDS (91.80%), Standard GCN (93.10%), and Multi-Agent FedAvg (89.40%). The system maintains an ultra-low False Positive Rate of 3.80% and per-sample inference latency of 0.55ms.")
+    add_body("Under simulated adversarial conditions with up to 30% corrupt Byzantine/Sybil agents, ATGC-MACIDS maintained 92.10% detection accuracy, whereas standard FedAvg accuracy dropped to 77.80%. This resilience confirms the effectiveness of the Adaptive Trust Engine in isolating malicious agents.")
+    add_body("Ablation experiments confirmed that removing Spatial Attention reduced accuracy by -2.30%, removing Temporal GRU reduced accuracy by -2.90%, and removing the Adaptive Trust Engine reduced adversarial accuracy by -11.90%, proving that all components are essential for robust intrusion detection.")
+
     add_heading_2("4.2 Data Preprocessing, Scaling & Graph Snapshot Partitioning")
     add_body("Raw telemetry features were preprocessed through numerical encoding of categorical attributes (proto, service, state), log-transforming highly skewed packet/byte counters, and applying MinMax normalization scaling feature ranges to [0, 1]. Continuous flow records were partitioned into 172 temporal graph snapshots based on 500ms sliding windows.")
 
@@ -884,6 +907,11 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
     add_heading_2("5.1 In-Depth Analysis of Experimental Findings")
     add_body("The empirical results confirm that combining spatial graph attention, temporal GRU modeling, and adaptive trust Jacobi consensus yields substantial performance gains over existing NIDS paradigms. The spatial attention mechanism enables the model to dynamically focus on suspicious host interaction edges while ignoring background noise. The temporal GRU module captures multi-snapshot traffic bursts essential for detecting low-and-slow reconnaissance and DoS build-ups.")
 
+    
+    add_body("Model interpretability is essential for SOC adoption. ATGC-MACIDS utilizes Integrated Gradients and SHAP values to attribute feature importance for every alert. Top predictive features include source bytes (sbytes), source TTL (sttl), source load (sload), flow duration (dur), destination load (dload), and state TTL counts (ct_state_ttl). High sload and low dur indicate volumetric DoS floods, whereas elevated ct_state_ttl indicates port scanning reconnaissance.")
+    add_body("To provide actionable threat intelligence, anomaly subgraphs are automatically mapped to the Cyber Threat Knowledge Graph (CT-KG) matrix, linking GNN predictions directly to MITRE ATT&CK TTPs: DoS (T1498), Reconnaissance (T1046), and Exploits (T1190). Security analysts receive structured threat alerts detailing host IP identities, attack categories, MITRE TTP identifiers, and recommended mitigation actions.")
+    add_body("The integrated web-based SIEM dashboard provides real-time network visibility via an interactive SVG topology map, color-coded host threat indicators, live telemetry feeds, host inspector panels, and an attack simulator sandbox. This interface allows security teams to monitor multi-subnet security health in real time.")
+
     add_heading_2("5.2 Model Interpretability via Feature Saliency & Node Attribution")
     add_body("To provide SOC analysts with clear explanations for threat alerts, ATGC-MACIDS computes feature saliency gradients using Integrated Gradients and SHAP values.")
 
@@ -917,6 +945,11 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
     
     add_heading_2("6.1 Summary of Research Contributions")
     add_body("This thesis presented ATGC-MACIDS, a novel decentralized multi-agent intrusion detection system for high-throughput enterprise subnets. By uniting spatio-temporal Graph Attention Networks (ST-GAT), Adaptive Trust Jacobi Consensus (ATGCO), and automated MITRE ATT&CK knowledge graph mapping, the proposed framework resolves long-standing trade-offs between detection accuracy, multi-agent trust resilience, processing latency, and operational explainability.")
+
+    
+    add_body("In summary, ATGC-MACIDS provides a comprehensive, decentralized solution for multi-agent intrusion detection in high-throughput enterprise subnets. By uniting spatio-temporal GNN feature learning, adaptive trust peer reputation, and Jacobi vector consensus, the framework solves key limitations of traditional signature and centralized ML IDS systems.")
+    add_body("Key empirical takeaways include: (1) Superior diagnostic accuracy (96.40%) and low false positive rate (3.80%), (2) Resilience against up to 30% compromised agents via adaptive trust isolation, (3) Line-rate processing performance (0.55ms latency, <5 consensus iterations), and (4) Actionable threat explainability via MITRE ATT&CK mapping.")
+    add_body("Future research will focus on integrating post-quantum cryptographic primitives to secure agent peer communications, extending graph models to encrypted TLS 1.3 telemetry streams, and implementing zero-knowledge proofs for privacy-preserving threat intelligence sharing across enterprise boundaries.")
 
     add_heading_2("6.2 Key Empirical Takeaways")
     add_bullet("Superior Intrusion Detection: Achieved 96.40% Accuracy, 96.15% F1-Score, and 0.9820 ROC-AUC on UNSW-NB15, outperforming traditional ML and GCN baselines.")
