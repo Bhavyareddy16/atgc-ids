@@ -2,7 +2,7 @@ import os
 import sys
 
 # Comprehensive script to build generate_elaborate_report.py with 15,000+ words
-# updated with Candidate Name: S.BHAVYA SRI (Reg. No: 22MIA1010)
+# updated with Candidate Name: S. BHAVYA SRI REGISTER NO: 22MIA1010
 # ensuring >70 rendered pages in Microsoft Word.
 
 code_content = '''import os
@@ -187,15 +187,15 @@ def build_elaborate_vit_report():
     add_p("A PROJECT REPORT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=18)
     add_p("Submitted by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=12)
     
-    add_p("S.BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=4)
-    add_p("(Reg. No: 22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=24)
+    add_p("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=4)
+    add_p("REGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=24)
     
     add_p("in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=18)
     add_p("MASTER OF TECHNOLOGY IN COMPUTER SCIENCE AND ENGINEERING\\nWITH SPECIALIZATION IN BUSINESS ANALYTICS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
     
     add_p("Under the guidance of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=6)
     add_p("Dr. Joe Dhanith P R", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=4)
-    add_p("Associate Professor, SCOPE", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=36)
+    add_p("Assistant Professor, SCOPE", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=36)
     
     add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING (SCOPE)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=6)
     add_p("VELLORE INSTITUTE OF TECHNOLOGY (VIT), CHENNAI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=6)
@@ -209,9 +209,9 @@ def build_elaborate_vit_report():
     add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=18, space_before=36, space_after=24)
     add_p("A PROJECT REPORT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=18)
     add_p("Submitted by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=12)
-    add_p("S.BHAVYA SRI\\n(Reg. No: 22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=24)
+    add_p("S. BHAVYA SRI\\nREGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=24)
     add_p("Under the guidance of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=6)
-    add_p("Dr. Joe Dhanith P R\\nAssociate Professor", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
+    add_p("Dr. Joe Dhanith P R\\nAssistant Professor", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
     add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING (SCOPE)\\nVELLORE INSTITUTE OF TECHNOLOGY (VIT), CHENNAI\\nDECEMBER, 2025", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=0)
     
     doc.add_page_break()
@@ -221,14 +221,14 @@ def build_elaborate_vit_report():
     # =========================================================
     add_heading_1("DECLARATION BY THE CANDIDATE")
     add_p("", space_after=12)
-    add_body("I hereby declare that the project report entitled \\"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\\" submitted by me to Vellore Institute of Technology (VIT), Chennai, in partial fulfillment of the requirement for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics is a record of bonafide project work carried out by me under the guidance of Dr. Joe Dhanith P R, Associate Professor, School of Computer Science and Engineering (SCOPE), VIT Chennai.")
+    add_body("I hereby declare that the project report entitled \\"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\\" submitted by me to Vellore Institute of Technology (VIT), Chennai, in partial fulfillment of the requirement for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics is a record of bonafide project work carried out by me under the guidance of Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), VIT Chennai.")
     add_p("", space_after=12)
     add_body("I further declare that the work reported herein does not form part of any other project report or dissertation on the basis of which a degree or award was conferred on an earlier occasion for this or any other candidate.")
     
     add_p("", space_after=48)
     add_p("Place: Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
     add_p("Date: December 2025", align=WD_ALIGN_PARAGRAPH.LEFT, size=12, space_after=48)
-    add_p("S.BHAVYA SRI\\nReg. No: 22MIA1010", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    add_p("S. BHAVYA SRI\\nREGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
     
     doc.add_page_break()
 
@@ -237,11 +237,11 @@ def build_elaborate_vit_report():
     # =========================================================
     add_heading_1("BONAFIDE CERTIFICATE")
     add_p("", space_after=12)
-    add_body("This is to certify that the project report entitled \\"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\\" submitted by S.BHAVYA SRI (Reg. No: 22MIA1010) in partial fulfillment of the requirements for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics, to School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai, is a record of bonafide work carried out by her under my supervision and guidance.")
+    add_body("This is to certify that the project report entitled \\"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\\" submitted by S. BHAVYA SRI REGISTER NO: 22MIA1010 in partial fulfillment of the requirements for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics, to School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai, is a record of bonafide work carried out by her under my supervision and guidance.")
     
     add_p("", space_after=60)
     add_p("Dr. Joe Dhanith P R", align=WD_ALIGN_PARAGRAPH.LEFT, bold=True, size=12)
-    add_p("Project Guide\\nAssociate Professor, SCOPE\\nVIT Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
+    add_p("Project Guide\\nAssistant Professor, SCOPE\\nVIT Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
     
     add_p("", space_after=48)
     add_p("Head of Department", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
@@ -268,12 +268,12 @@ def build_elaborate_vit_report():
     add_heading_1("ACKNOWLEDGEMENTS")
     add_p("", space_after=6)
     add_body("I express my profound gratitude to the Almighty for granting me the strength, wisdom, and perseverance to complete this research work successfully.")
-    add_body("I extend my deepest gratitude and sincere respect to my project guide, Dr. Joe Dhanith P R, Associate Professor, School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai. His invaluable guidance, continuous encouragement, constructive criticism, and profound domain expertise throughout the conceptualization, algorithm design, and experimental validation of this project were instrumental in bringing this work to fruition.")
+    add_body("I extend my deepest gratitude and sincere respect to my project guide, Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai. His invaluable guidance, continuous encouragement, constructive criticism, and profound domain expertise throughout the conceptualization, algorithm design, and experimental validation of this project were instrumental in bringing this work to fruition.")
     add_body("I express my sincere thanks to the Dean, School of Computer Science and Engineering (SCOPE), and the management of VIT Chennai for providing state-of-the-art computational infrastructure, research facilities, and an inspiring academic environment that facilitated this research.")
     add_body("I am also deeply thankful to all faculty members, technical staff, and peer researchers at SCOPE, VIT Chennai, for their valuable suggestions, insightful technical discussions, and support during my master's program.")
     add_body("Finally, I owe a special debt of gratitude to my family and friends for their unconditional love, continuous moral support, and endless encouragement throughout my academic journey.")
     add_p("", space_after=36)
-    add_p("S.BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    add_p("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
     
     doc.add_page_break()
 
@@ -698,4 +698,4 @@ if __name__ == "__main__":
 with open('generate_elaborate_report.py', 'w', encoding='utf-8') as f:
     f.write(code_content)
 
-print("generate_elaborate_report.py successfully updated with candidate S.BHAVYA SRI (22MIA1010)!")
+print("generate_elaborate_report.py successfully updated with candidate S. BHAVYA SRI (22MIA1010)!")

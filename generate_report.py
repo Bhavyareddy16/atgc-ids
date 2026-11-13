@@ -60,7 +60,7 @@ def create_vit_report():
     add_para("M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=22, space_before=10, space_after=35)
     
     add_para("by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14)
-    add_para("BHAVYA REDDY (Reg. No. [REGISTER_NUMBER])", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_before=5, space_after=60)
+    add_para("S. BHAVYA SRI (Reg. No. 22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_before=5, space_after=60)
     
     add_para("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_before=40)
     add_para("VELLORE INSTITUTE OF TECHNOLOGY, CHENNAI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14)
@@ -77,7 +77,7 @@ def create_vit_report():
     add_para("M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=22, space_before=10, space_after=35)
     
     add_para("by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14)
-    add_para("BHAVYA REDDY (Reg. No. [REGISTER_NUMBER])", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_before=5, space_after=60)
+    add_para("S. BHAVYA SRI (Reg. No. 22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_before=5, space_after=60)
     
     add_para("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_before=40)
     add_para("VELLORE INSTITUTE OF TECHNOLOGY, CHENNAI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14)
@@ -99,7 +99,7 @@ def create_vit_report():
     add_para("Place: Chennai", bold=False, size=14)
     add_para("Date: ", bold=False, size=14, space_after=30)
     add_para("Signature of the Candidate", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=14)
-    add_para("(BHAVYA REDDY)", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=14)
+    add_para("(S. BHAVYA SRI)", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=14)
     
     add_page_break()
 
@@ -109,12 +109,12 @@ def create_vit_report():
     add_para("School of Computer Science and Engineering", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_before=10)
     add_para("CERTIFICATE", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
     
-    p_cert = add_para("This is to certify that the report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" is prepared and submitted by BHAVYA REDDY (Reg No: [REGISTER_NUMBER]) to Vellore Institute of Technology, Chennai, in partial fulfillment of the requirement for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics programme is a bonafide record carried out under my guidance. The project fulfills the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma and the same is certified.", space_before=10, space_after=30)
+    p_cert = add_para("This is to certify that the report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM\" is prepared and submitted by S. BHAVYA SRI (Reg No: 22MIA1010) to Vellore Institute of Technology, Chennai, in partial fulfillment of the requirement for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics programme is a bonafide record carried out under my guidance. The project fulfills the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma and the same is certified.", space_before=10, space_after=30)
     p_cert.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     add_para("Signature of the Guide: _____________________", size=12, space_after=5)
     add_para("Name: Dr. Joe Dhanith P R", size=12, space_after=5)
-    add_para("Designation: Associate Professor / Professor, SCOPE", size=12, space_after=5)
+    add_para("Designation: Assistant Professor / Professor, SCOPE", size=12, space_after=5)
     add_para("Date: _____________________", size=12, space_after=30)
     
     add_para("Signature of the Examiner 1\t\t\tSignature of the Examiner 2", bold=True, size=12, space_before=10)
@@ -148,7 +148,7 @@ def create_vit_report():
     # ---------------------------------------------------------
     add_para("ACKNOWLEDGEMENT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, underline=True, size=14, space_before=10, space_after=20)
     
-    p_ack1 = add_para("It is my pleasure to express with a deep sense of gratitude to Dr. Joe Dhanith P R, Associate Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his/her constant guidance, continual encouragement, and understanding; more than all, he/she taught me patience in my endeavour. My association with him/her is not confined to academics only, but it is a great opportunity for my part of work to interact with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
+    p_ack1 = add_para("It is my pleasure to express with a deep sense of gratitude to Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his/her constant guidance, continual encouragement, and understanding; more than all, he/she taught me patience in my endeavour. My association with him/her is not confined to academics only, but it is a great opportunity for my part of work to interact with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
     p_ack1.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     p_ack2 = add_para("It is with gratitude that I would like to extend my thanks to the visionary leader Dr. G. Viswanathan our Honourable Chancellor, Mr. Sankar Viswanathan, Dr. Sekar Viswanathan, Dr. G V Selvam Vice Presidents, Dr. Sandhya Pentareddy, Executive Director, Ms. Kadhambari S. Viswanathan, Assistant Vice-President, Dr. V. S. Kanchana Bhaaskaran Vice-Chancellor, and Dr. T. Thyagarajan Pro-Vice Chancellor, VIT Chennai for providing an exceptional working environment and inspiring all of us during the tenure of the course.")
@@ -165,7 +165,7 @@ def create_vit_report():
     
     add_para("Place: Chennai", size=12, space_before=20)
     add_para("Date: ", size=12)
-    add_para("BHAVYA REDDY", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    add_para("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
     
     add_page_break()
 
