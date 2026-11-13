@@ -277,102 +277,102 @@ def build_elaborate_vit_report():
     add_p("", space_after=6)
     
     toc_data = [
-        ["Title Page", "i"],
-        ["Declaration by Candidate", "ii"],
-        ["Bonafide Certificate", "iii"],
-        ["Abstract", "iv"],
-        ["Acknowledgements", "v"],
-        ["Table of Contents", "vi"],
-        ["List of Figures", "x"],
-        ["List of Tables", "xii"],
-        ["List of Symbols, Abbreviations and Nomenclature", "xiii"],
-        ["", ""],
-        ["CHAPTER 1: INTRODUCTION & BACKGROUND", "1"],
-        ["  1.1 Background and Domain Overview", "1"],
-        ["  1.2 Intrusion Detection in High-Throughput Networks", "3"],
-        ["  1.3 Threat Landscape and Attack Vectors in Modern Enterprise Subnets", "5"],
-        ["  1.4 Limitations of Signature and Traditional Machine Learning IDS", "7"],
-        ["  1.5 Graph Neural Networks in Cybersecurity: Opportunities and Vulnerabilities", "9"],
-        ["  1.6 Vulnerabilities to Adversarial Perturbations & Dynamic Topology", "11"],
-        ["  1.7 Problem Statement", "12"],
-        ["  1.8 Research Objectives & Key Contributions", "13"],
-        ["  1.9 Organization of the Thesis Report", "14"],
-        ["", ""],
-        ["CHAPTER 2: LITERATURE REVIEW & RELATED WORK", "15"],
-        ["  2.1 Historical Evolution of Network Anomaly Detection (1987-2025)", "15"],
-        ["  2.2 Comparative Analysis of Shallow ML vs Deep Sequential Models", "18"],
-        ["  2.3 Graph Neural Networks in Network Security (GCN, GAT, Dynamic Graphs)", "20"],
-        ["  2.4 Multi-Agent Systems & Distributed Consensus Protocols", "23"],
-        ["  2.5 Adaptive Trust Evaluation, Reputation Metrics & Sybil Defense", "25"],
-        ["  2.6 Explainable AI (XAI) & Threat Knowledge Graph Mapping", "27"],
-        ["  2.7 Literature Gap Analysis & Summary Table", "28"],
-        ["", ""],
-        ["CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY (ATGC-MACIDS)", "30"],
-        ["  3.1 Overview of the ATGC-MACIDS Paradigm", "30"],
-        ["  3.2 Dynamic Network Graph Construction & Temporal Graph Snapshots", "32"],
-        ["  3.3 Multi-Agent Architecture & Local Perception Nodes", "35"],
-        ["  3.4 Deep Temporal GNN Encoder (ST-GAT Architecture)", "37"],
-        ["  3.5 Adaptive Trust Evaluation Engine & Dynamic Reputation Scoring", "40"],
-        ["  3.6 Jacobi Consensus Protocol & Distributed Vector Agreement", "42"],
-        ["  3.7 Optimization Objective & Dual Loss Functions", "44"],
-        ["  3.8 MITRE ATT&CK Threat Knowledge Graph Mapping Engine", "45"],
-        ["  3.9 System Implementation & Algorithmic Pseudocode", "46"],
-        ["", ""],
-        ["CHAPTER 4: EXPERIMENTAL EVALUATION & RESULTS", "48"],
-        ["  4.1 Benchmark Dataset Characterization (UNSW-NB15)", "48"],
-        ["  4.2 Data Preprocessing, Scaling & Graph Snapshot Partitioning", "50"],
-        ["  4.3 Experimental Setup, Hardware/Software Infrastructure & Hyperparameters", "52"],
-        ["  4.4 Baseline Models for Comparative Evaluation", "53"],
-        ["  4.5 Quantitative Evaluation: Detection Accuracy & Metrics", "54"],
-        ["  4.6 Robustness Analysis Against Adversarial Graph Attacks & Sybil Nodes", "57"],
-        ["  4.7 Latency, Scalability, and Consensus Iteration Convergence Analysis", "59"],
-        ["  4.8 Ablation Studies (ST-GAT, Trust Engine, Consensus Layers)", "60"],
-        ["", ""],
-        ["CHAPTER 5: DISCUSSION, THREAT EXPLAINABILITY & SYSTEM DEPLOYMENT", "62"],
-        ["  5.1 In-Depth Analysis of Experimental Findings", "62"],
-        ["  5.2 Model Interpretability via Feature Saliency & Node Attribution", "64"],
-        ["  5.3 Automated Mapping of Detected Anomalies to MITRE ATT&CK TTPs", "66"],
-        ["  5.4 Enterprise SIEM Integration, Real-Time Dashboard Architecture", "68"],
-        ["  5.5 Operational Security & Deployment Considerations", "70"],
-        ["", ""],
-        ["CHAPTER 6: CONCLUSION & FUTURE WORK", "71"],
-        ["  6.1 Summary of Research Contributions", "71"],
-        ["  6.2 Key Empirical Takeaways", "72"],
-        ["  6.3 Limitations of the Current Study", "73"],
-        ["  6.4 Directions for Future Research", "74"],
-        ["", ""],
-        ["APPENDICES", "75"],
-        ["  Appendix A: Mathematical Proofs & Convergence Analysis", "75"],
-        ["  Appendix B: Core Algorithmic Code Implementation Listings", "77"],
-        ["  Appendix C: UNSW-NB15 Dataset Feature Definitions & Schemas", "79"],
-        ["", ""],
-        ["REFERENCES (IEEE Citation Format)", "81"]
+        "Title Page",
+        "Declaration by Candidate",
+        "Bonafide Certificate",
+        "Abstract",
+        "Acknowledgements",
+        "Table of Contents",
+        "List of Figures",
+        "List of Tables",
+        "List of Symbols, Abbreviations and Nomenclature",
+        "",
+        "CHAPTER 1: INTRODUCTION & BACKGROUND",
+        "  1.1 Background and Domain Overview",
+        "  1.2 Intrusion Detection in High-Throughput Networks",
+        "  1.3 Threat Landscape and Attack Vectors in Modern Enterprise Subnets",
+        "  1.4 Limitations of Signature and Traditional Machine Learning IDS",
+        "  1.5 Graph Neural Networks in Cybersecurity: Opportunities and Vulnerabilities",
+        "  1.6 Vulnerabilities to Adversarial Perturbations & Dynamic Topology",
+        "  1.7 Problem Statement",
+        "  1.8 Research Objectives & Key Contributions",
+        "  1.9 Organization of the Thesis Report",
+        "",
+        "CHAPTER 2: LITERATURE REVIEW & RELATED WORK",
+        "  2.1 Historical Evolution of Network Anomaly Detection (1987-2025)",
+        "  2.2 Comparative Analysis of Shallow ML vs Deep Sequential Models",
+        "  2.3 Graph Neural Networks in Network Security (GCN, GAT, Dynamic Graphs)",
+        "  2.4 Multi-Agent Systems & Distributed Consensus Protocols",
+        "  2.5 Adaptive Trust Evaluation, Reputation Metrics & Sybil Defense",
+        "  2.6 Explainable AI (XAI) & Threat Knowledge Graph Mapping",
+        "  2.7 Literature Gap Analysis & Summary Table",
+        "",
+        "CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY (ATGC-MACIDS)",
+        "  3.1 Overview of the ATGC-MACIDS Paradigm",
+        "  3.2 Dynamic Network Graph Construction & Temporal Graph Snapshots",
+        "  3.3 Multi-Agent Architecture & Local Perception Nodes",
+        "  3.4 Deep Temporal GNN Encoder (ST-GAT Architecture)",
+        "  3.5 Adaptive Trust Evaluation Engine & Dynamic Reputation Scoring",
+        "  3.6 Jacobi Consensus Protocol & Distributed Vector Agreement",
+        "  3.7 Optimization Objective & Dual Loss Functions",
+        "  3.8 MITRE ATT&CK Threat Knowledge Graph Mapping Engine",
+        "  3.9 System Implementation & Algorithmic Pseudocode",
+        "",
+        "CHAPTER 4: EXPERIMENTAL EVALUATION & RESULTS",
+        "  4.1 Benchmark Dataset Characterization (UNSW-NB15)",
+        "  4.2 Data Preprocessing, Scaling & Graph Snapshot Partitioning",
+        "  4.3 Experimental Setup, Hardware/Software Infrastructure & Hyperparameters",
+        "  4.4 Baseline Models for Comparative Evaluation",
+        "  4.5 Quantitative Evaluation: Detection Accuracy & Metrics",
+        "  4.6 Robustness Analysis Against Adversarial Graph Attacks & Sybil Nodes",
+        "  4.7 Latency, Scalability, and Consensus Iteration Convergence Analysis",
+        "  4.8 Ablation Studies (ST-GAT, Trust Engine, Consensus Layers)",
+        "",
+        "CHAPTER 5: DISCUSSION, THREAT EXPLAINABILITY & SYSTEM DEPLOYMENT",
+        "  5.1 In-Depth Analysis of Experimental Findings",
+        "  5.2 Model Interpretability via Feature Saliency & Node Attribution",
+        "  5.3 Automated Mapping of Detected Anomalies to MITRE ATT&CK TTPs",
+        "  5.4 Enterprise SIEM Integration, Real-Time Dashboard Architecture",
+        "  5.5 Operational Security & Deployment Considerations",
+        "",
+        "CHAPTER 6: CONCLUSION & FUTURE WORK",
+        "  6.1 Summary of Research Contributions",
+        "  6.2 Key Empirical Takeaways",
+        "  6.3 Limitations of the Current Study",
+        "  6.4 Directions for Future Research",
+        "",
+        "APPENDICES",
+        "  Appendix A: Mathematical Proofs & Convergence Analysis",
+        "  Appendix B: Core Algorithmic Code Implementation Listings",
+        "  Appendix C: UNSW-NB15 Dataset Feature Definitions & Schemas",
+        "",
+        "REFERENCES (IEEE Citation Format)"
     ]
     
-    for item, pg in toc_data:
+    for item in toc_data:
         p = doc.add_paragraph()
+        if not item:
+            p.paragraph_format.space_before = Pt(4)
+            p.paragraph_format.space_after = Pt(2)
+            continue
+            
         p.paragraph_format.space_after = Pt(3)
         p.paragraph_format.line_spacing = 1.3
         
         is_bold = item.startswith("CHAPTER") or item.startswith("APPENDICES") or item.startswith("REFERENCES") or item in ["Title Page", "Abstract", "Table of Contents"]
-        r1 = p.add_run(item)
+        is_chapter = item.startswith("CHAPTER") or item in ["APPENDICES", "REFERENCES (IEEE Citation Format)"]
+        
+        if is_chapter:
+            p.paragraph_format.space_before = Pt(6)
+            p.paragraph_format.space_after = Pt(3)
+        elif item.startswith("  "):
+            p.paragraph_format.left_indent = Inches(0.25)
+            
+        r1 = p.add_run(item.strip() if is_chapter else item)
         r1.font.name = 'Times New Roman'
         r1.font.size = Pt(11)
         r1.bold = is_bold
         
-        if pg:
-            dots_len = max(5, 75 - len(item))
-            dots = " " + "." * dots_len + " "
-            r2 = p.add_run(dots)
-            r2.font.name = 'Times New Roman'
-            r2.font.size = Pt(10)
-            r2.font.color.rgb = RGBColor(120, 120, 120)
-            
-            r3 = p.add_run(pg)
-            r3.font.name = 'Times New Roman'
-            r3.font.size = Pt(11)
-            r3.bold = is_bold
-            
     doc.add_page_break()
 
     # =========================================================
@@ -382,21 +382,21 @@ def build_elaborate_vit_report():
     add_p("", space_after=6)
     
     fig_data = [
-        ["Figure 3.1", "High-Level System Architecture of the ATGC-MACIDS Framework", "31"],
-        ["Figure 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Encoder Architecture", "38"],
-        ["Figure 3.3", "Adaptive Trust Evaluation Engine & Dynamic Peer Reputation Scoring Workflow", "41"],
-        ["Figure 4.1", "Training & Validation Loss / Accuracy Curves over 15 Epochs on UNSW-NB15", "55"],
-        ["Figure 4.2", "Confusion Matrix of Multi-Class Intrusion Detection Performance", "55"],
-        ["Figure 4.3", "Receiver Operating Characteristic (ROC) and Precision-Recall Curves", "56"],
-        ["Figure 4.4", "Comparative Benchmark Performance across Baseline Models", "56"],
-        ["Figure 4.5", "Detection Accuracy under Increasing Ratio of Compromised Adversarial Nodes", "58"],
-        ["Figure 4.6", "Jacobi Consensus Vector Residual Error Convergence across Iterations", "59"],
-        ["Figure 5.1", "Global Feature Saliency and SHAP Feature Attribution Ranking", "65"],
-        ["Figure 5.2", "Cyber Threat Knowledge Graph (CT-KG) Mapped to MITRE ATT&CK Matrix", "67"],
-        ["Figure 5.3", "Interactive Enterprise Web Dashboard & Real-Time SIEM Monitoring Interface", "69"]
+        ["Figure 3.1", "High-Level System Architecture of the ATGC-MACIDS Framework"],
+        ["Figure 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Encoder Architecture"],
+        ["Figure 3.3", "Adaptive Trust Evaluation Engine & Dynamic Peer Reputation Scoring Workflow"],
+        ["Figure 4.1", "Training & Validation Loss / Accuracy Curves over 15 Epochs on UNSW-NB15"],
+        ["Figure 4.2", "Confusion Matrix of Multi-Class Intrusion Detection Performance"],
+        ["Figure 4.3", "Receiver Operating Characteristic (ROC) and Precision-Recall Curves"],
+        ["Figure 4.4", "Comparative Benchmark Performance across Baseline Models"],
+        ["Figure 4.5", "Detection Accuracy under Increasing Ratio of Compromised Adversarial Nodes"],
+        ["Figure 4.6", "Jacobi Consensus Vector Residual Error Convergence across Iterations"],
+        ["Figure 5.1", "Global Feature Saliency and SHAP Feature Attribution Ranking"],
+        ["Figure 5.2", "Cyber Threat Knowledge Graph (CT-KG) Mapped to MITRE ATT&CK Matrix"],
+        ["Figure 5.3", "Interactive Enterprise Web Dashboard & Real-Time SIEM Monitoring Interface"]
     ]
     
-    for fig_id, caption, pg in fig_data:
+    for fig_id, caption in fig_data:
         p = doc.add_paragraph()
         p.paragraph_format.space_after = Pt(4)
         p.paragraph_format.line_spacing = 1.3
@@ -404,15 +404,6 @@ def build_elaborate_vit_report():
         r1 = p.add_run(f"{fig_id}: {caption}")
         r1.font.name = 'Times New Roman'
         r1.font.size = Pt(11)
-        
-        dots_len = max(5, 75 - len(f"{fig_id}: {caption}"))
-        r2 = p.add_run(" " + "." * dots_len + " ")
-        r2.font.color.rgb = RGBColor(120, 120, 120)
-        
-        r3 = p.add_run(pg)
-        r3.font.name = 'Times New Roman'
-        r3.font.size = Pt(11)
-        r3.bold = True
         
     doc.add_page_break()
 
@@ -423,18 +414,18 @@ def build_elaborate_vit_report():
     add_p("", space_after=6)
     
     tbl_list_data = [
-        ["Table 2.1", "Comprehensive Literature Comparison Matrix of NIDS Paradigms", "29"],
-        ["Table 3.1", "Dynamic Graph Mathematical Notations and Variable Definitions", "33"],
-        ["Table 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Hyperparameters", "39"],
-        ["Table 4.1", "UNSW-NB15 Dataset Traffic Distribution across 9 Attack Categories", "49"],
-        ["Table 4.2", "Hardware & Software Experimental Execution Environment", "52"],
-        ["Table 4.3", "Quantitative Performance Benchmark of Baseline vs. ATGC-MACIDS", "54"],
-        ["Table 4.4", "Per-Category Intrusion Detection Metrics on UNSW-NB15 Test Partition", "56"],
-        ["Table 4.5", "Ablation Study of ATGC-MACIDS Architectural Components", "61"],
-        ["Table C.1", "Complete Feature Schema and Description of UNSW-NB15 Telemetry", "80"]
+        ["Table 2.1", "Comprehensive Literature Comparison Matrix of NIDS Paradigms"],
+        ["Table 3.1", "Dynamic Graph Mathematical Notations and Variable Definitions"],
+        ["Table 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Hyperparameters"],
+        ["Table 4.1", "UNSW-NB15 Dataset Traffic Distribution across 9 Attack Categories"],
+        ["Table 4.2", "Hardware & Software Experimental Execution Environment"],
+        ["Table 4.3", "Quantitative Performance Benchmark of Baseline vs. ATGC-MACIDS"],
+        ["Table 4.4", "Per-Category Intrusion Detection Metrics on UNSW-NB15 Test Partition"],
+        ["Table 4.5", "Ablation Study of ATGC-MACIDS Architectural Components"],
+        ["Table C.1", "Complete Feature Schema and Description of UNSW-NB15 Telemetry"]
     ]
     
-    for tbl_id, caption, pg in tbl_list_data:
+    for tbl_id, caption in tbl_list_data:
         p = doc.add_paragraph()
         p.paragraph_format.space_after = Pt(4)
         p.paragraph_format.line_spacing = 1.3
@@ -442,15 +433,6 @@ def build_elaborate_vit_report():
         r1 = p.add_run(f"{tbl_id}: {caption}")
         r1.font.name = 'Times New Roman'
         r1.font.size = Pt(11)
-        
-        dots_len = max(5, 75 - len(f"{tbl_id}: {caption}"))
-        r2 = p.add_run(" " + "." * dots_len + " ")
-        r2.font.color.rgb = RGBColor(120, 120, 120)
-        
-        r3 = p.add_run(pg)
-        r3.font.name = 'Times New Roman'
-        r3.font.size = Pt(11)
-        r3.bold = True
         
     doc.add_page_break()
 
