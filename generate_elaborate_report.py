@@ -175,78 +175,150 @@ def build_elaborate_vit_report():
     # =========================================================
     # 1. COVER PAGE
     # =========================================================
-    add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=18, space_before=36, space_after=24)
+    logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vit_logo.png")
     
-    add_p("A PROJECT REPORT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=18)
-    add_p("Submitted by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=12)
+    add_p("A project report on", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_before=16, space_after=14)
     
-    add_p("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=4)
-    add_p("REGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=24)
+    add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_after=18)
     
-    add_p("in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=18)
-    add_p("MASTER OF TECHNOLOGY IN COMPUTER SCIENCE AND ENGINEERING\nWITH SPECIALIZATION IN BUSINESS ANALYTICS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
+    add_p("Submitted in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14, space_after=14)
     
-    add_p("Under the guidance of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=6)
-    add_p("Dr. Joe Dhanith P R", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=4)
-    add_p("Assistant Professor, SCOPE", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=36)
+    add_p("M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_after=18)
     
-    add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING (SCOPE)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=6)
-    add_p("VELLORE INSTITUTE OF TECHNOLOGY (VIT), CHENNAI", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=6)
-    add_p("DECEMBER, 2025", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=12, space_after=0)
+    add_p("by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14, space_after=12)
+    
+    add_p("S. BHAVYA SRI (22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_after=18)
+    
+    if os.path.exists(logo_path):
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(6)
+        p_logo.paragraph_format.space_after = Pt(14)
+        p_logo.paragraph_format.line_spacing = 1.0
+        run_logo = p_logo.add_run()
+        run_logo.add_picture(logo_path, width=Inches(3.8))
+        
+    add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_after=6)
+    add_p("December, 2025", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=0)
     
     doc.add_page_break()
 
     # =========================================================
     # 2. TITLE PAGE
     # =========================================================
-    add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=18, space_before=36, space_after=24)
-    add_p("A PROJECT REPORT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=18)
-    add_p("Submitted by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=12)
-    add_p("S. BHAVYA SRI\nREGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=24)
-    add_p("Under the guidance of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_after=6)
-    add_p("Dr. Joe Dhanith P R\nAssistant Professor", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=36)
-    add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING (SCOPE)\nVELLORE INSTITUTE OF TECHNOLOGY (VIT), CHENNAI\nDECEMBER, 2025", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=13, space_after=0)
+    add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_before=14, space_after=16)
+    
+    add_p("Submitted in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14, space_after=12)
+    
+    add_p("M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_after=16)
+    
+    add_p("by", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14, space_after=10)
+    
+    add_p("S. BHAVYA SRI (22MIA1010)", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_after=14)
+    
+    add_p("Under the guidance of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=13, space_after=4)
+    add_p("Dr. Joe Dhanith P R", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=2)
+    add_p("Assistant Professor, SCOPE", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=14)
+    
+    if os.path.exists(logo_path):
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(6)
+        p_logo.paragraph_format.space_after = Pt(12)
+        p_logo.paragraph_format.line_spacing = 1.0
+        run_logo = p_logo.add_run()
+        run_logo.add_picture(logo_path, width=Inches(3.2))
+        
+    add_p("SCHOOL OF COMPUTER SCIENCE AND ENGINEERING", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_after=6)
+    add_p("December, 2025", align=WD_ALIGN_PARAGRAPH.CENTER, size=12, space_after=0)
     
     doc.add_page_break()
 
     # =========================================================
     # 3. DECLARATION BY CANDIDATE
     # =========================================================
-    add_heading_1("DECLARATION BY THE CANDIDATE")
-    add_p("", space_after=12)
-    add_body("I hereby declare that the project report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\" submitted by me to Vellore Institute of Technology (VIT), Chennai, in partial fulfillment of the requirement for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics is a record of bonafide project work carried out by me under the guidance of Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), VIT Chennai.")
-    add_p("", space_after=12)
-    add_body("I further declare that the work reported herein does not form part of any other project report or dissertation on the basis of which a degree or award was conferred on an earlier occasion for this or any other candidate.")
+    if os.path.exists(logo_path):
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(0)
+        p_logo.paragraph_format.space_after = Pt(14)
+        p_logo.paragraph_format.line_spacing = 1.0
+        run_logo = p_logo.add_run()
+        run_logo.add_picture(logo_path, width=Inches(3.2))
+        
+    add_p("DECLARATION", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, underline=True, space_after=16)
     
-    add_p("", space_after=48)
+    add_body("I hereby declare that the thesis entitled “ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS” submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), VIT Chennai.")
+    add_p("", space_after=10)
+    add_body("I further declare that the work reported in this thesis has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.")
+    
+    add_p("", space_after=36)
     add_p("Place: Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
-    add_p("Date: December 2025", align=WD_ALIGN_PARAGRAPH.LEFT, size=12, space_after=48)
-    add_p("S. BHAVYA SRI\nREGISTER NO: 22MIA1010", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    p_sig = doc.add_paragraph()
+    p_sig.paragraph_format.space_before = Pt(0)
+    p_sig.paragraph_format.space_after = Pt(0)
+    p_sig.paragraph_format.line_spacing = 1.3
+    r_dt = p_sig.add_run("Date: December 2025")
+    r_dt.font.name = 'Times New Roman'
+    r_dt.font.size = Pt(12)
+    r_sp = p_sig.add_run("\t\t\t\t\t")
+    r_sig = p_sig.add_run("Signature of the Candidate\n\t\t\t\t\tS. BHAVYA SRI (22MIA1010)")
+    r_sig.font.name = 'Times New Roman'
+    r_sig.font.size = Pt(12)
+    r_sig.bold = True
     
     doc.add_page_break()
 
     # =========================================================
     # 4. CERTIFICATE BY GUIDE
     # =========================================================
-    add_heading_1("BONAFIDE CERTIFICATE")
-    add_p("", space_after=12)
-    add_body("This is to certify that the project report entitled \"ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS\" submitted by S. BHAVYA SRI (Register No: 22MIA1010) in partial fulfillment of the requirements for the award of the degree of Master of Technology in Computer Science and Engineering with Specialization in Business Analytics, to School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai, is a record of bonafide work carried out by her under my supervision and guidance.")
+    if os.path.exists(logo_path):
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(0)
+        p_logo.paragraph_format.space_after = Pt(8)
+        p_logo.paragraph_format.line_spacing = 1.0
+        run_logo = p_logo.add_run()
+        run_logo.add_picture(logo_path, width=Inches(3.2))
+        
+    add_p("School of Computer Science and Engineering", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=6)
+    add_p("CERTIFICATE", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_after=14)
     
-    add_p("", space_after=60)
-    add_p("Dr. Joe Dhanith P R", align=WD_ALIGN_PARAGRAPH.LEFT, bold=True, size=12)
-    add_p("Project Guide\nAssistant Professor, SCOPE\nVIT Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
+    add_body("This is to certify that the report entitled “ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS” is prepared and submitted by S. BHAVYA SRI (22MIA1010) to Vellore Institute of Technology, Chennai, in partial fulfillment of the requirement for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics programme is a bonafide record carried out under my guidance. The project fulfills the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma and the same is certified.")
     
-    add_p("", space_after=48)
-    add_p("Head of Department", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
-    add_p("Department of Computer Science & Engineering\nSCOPE, VIT Chennai", align=WD_ALIGN_PARAGRAPH.RIGHT, size=12)
+    add_p("", space_after=18)
+    add_p("Signature of the Guide:", align=WD_ALIGN_PARAGRAPH.LEFT, bold=True, size=12)
+    add_p("Name: Dr. Joe Dhanith P R\nDesignation: Assistant Professor, SCOPE\nDate: December 2025", align=WD_ALIGN_PARAGRAPH.LEFT, size=12, space_after=20)
+    
+    tbl_exam = doc.add_table(rows=1, cols=2)
+    tbl_exam.alignment = WD_TABLE_ALIGNMENT.CENTER
+    c0 = tbl_exam.cell(0, 0)
+    c0.width = Inches(3.2)
+    p0 = c0.paragraphs[0]
+    p0.paragraph_format.line_spacing = 1.3
+    r0 = p0.add_run("Signature of the Examiner 1\nName:\nDate:")
+    r0.font.name = 'Times New Roman'
+    r0.font.size = Pt(12)
+    r0.bold = True
+    
+    c1 = tbl_exam.cell(0, 1)
+    c1.width = Inches(3.2)
+    p1 = c1.paragraphs[0]
+    p1.paragraph_format.line_spacing = 1.3
+    r1 = p1.add_run("Signature of the Examiner 2\nName:\nDate:")
+    r1.font.name = 'Times New Roman'
+    r1.font.size = Pt(12)
+    r1.bold = True
+    
+    add_p("", space_after=20)
+    add_p("Approved by the Head of Department", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=12, space_after=0)
     
     doc.add_page_break()
 
     # =========================================================
     # 5. ABSTRACT
     # =========================================================
-    add_heading_1("ABSTRACT")
-    add_p("", space_after=6)
+    add_p("ABSTRACT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, underline=True, space_after=12)
     add_body("Modern enterprise networks face an escalating threat landscape characterized by high-throughput traffic, sophisticated zero-day exploits, and distributed multi-vector attacks designed to evade traditional perimeter defenses. Standard Network Intrusion Detection Systems (NIDS) often rely on centralized inspection engines or isolated machine learning models. However, centralized approaches introduce single-point-of-failure risks, bandwidth bottlenecks, and severe privacy concerns, while localized ML models lack context regarding cross-subnet lateral movement and are highly vulnerable to adversarial graph topology manipulation and Sybil node compromise.")
     add_body("To address these critical security limitations, this thesis presents ATGC-MACIDS (Adaptive Trust Graph Consensus Multi-Agent Intrusion Detection System), a novel decentralized cybersecurity framework that combines spatio-temporal Graph Neural Networks (GNNs), dynamic reputation-based trust evaluation, Jacobi vector consensus, and automated threat explainability mapped directly to the MITRE ATT&CK knowledge matrix.")
     add_body("In ATGC-MACIDS, enterprise networks are modeled as dynamic spatial-temporal attributed graphs, where network entities (IP hosts, subnets, routers) act as nodes and telemetry flows represent directed weighted edges. Distributed local perception agents execute a Spatio-Temporal Graph Attention Network (ST-GAT) encoder to capture complex relational topologic dependencies and inter-snapshot temporal traffic dynamics. To maintain consensus across untrusted enterprise subnets without relying on a centralized coordinator, agents participate in an Adaptive Trust Jacobi Consensus protocol (ATGCO). The framework dynamically computes peer reputation weights based on historical decision fidelity, spatial prediction agreement, and statistical entropy, automatically down-weighting or isolating compromised, Byzantine, or Sybil nodes.")
@@ -258,15 +330,24 @@ def build_elaborate_vit_report():
     # =========================================================
     # 6. ACKNOWLEDGEMENTS
     # =========================================================
-    add_heading_1("ACKNOWLEDGEMENTS")
-    add_p("", space_after=6)
-    add_body("I express my profound gratitude to the Almighty for granting me the strength, wisdom, and perseverance to complete this research work successfully.")
-    add_body("I extend my deepest gratitude and sincere respect to my project guide, Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology (VIT), Chennai. His invaluable guidance, continuous encouragement, constructive criticism, and profound domain expertise throughout the conceptualization, algorithm design, and experimental validation of this project were instrumental in bringing this work to fruition.")
-    add_body("I express my sincere thanks to the Dean, School of Computer Science and Engineering (SCOPE), and the management of VIT Chennai for providing state-of-the-art computational infrastructure, research facilities, and an inspiring academic environment that facilitated this research.")
-    add_body("I am also deeply thankful to all faculty members, technical staff, and peer researchers at SCOPE, VIT Chennai, for their valuable suggestions, insightful technical discussions, and support during my master's program.")
-    add_body("Finally, I owe a special debt of gratitude to my family and friends for their unconditional love, continuous moral support, and endless encouragement throughout my academic journey.")
+    add_p("ACKNOWLEDGEMENT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=12)
+    add_body("It is my pleasure to express with deep sense of gratitude to Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for his constant guidance, continual encouragement, understanding; more than all, he taught me patience in my endeavour. My association with him is not confined to academics only, but it is a great opportunity for my part of work with an intellectual and expert in the field of Artificial Intelligence, Graph Neural Networks, and Cybersecurity.")
+    add_body("It is with gratitude that I would like to extend my thanks to the visionary leader Dr. G. Viswanathan our Honourable Chancellor, Mr. Sankar Viswanathan, Dr. Sekar Viswanathan, Dr. G V Selvam Vice Presidents, Dr. Sandhya Pentareddy, Executive Director, Ms. Kadhambari S. Viswanathan, Assistant Vice-President, Dr. V. S. Kanchana Bhaaskaran Vice-Chancellor, and Dr. T. Thyagarajan Pro-Vice Chancellor, VIT Chennai for providing an exceptional working environment and inspiring all of us during the tenure of the course.")
+    add_body("Special mention to Dr. Viswanathan V, Dean, Dr. Nithyanandam P, Dr. Suganya G, and Dr. Sweetlin Hemalatha C, Associate Deans, School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, for spending their valuable time and efforts in sharing their knowledge and for helping us in every aspect.")
+    add_body("In jubilant state, I express ingeniously my whole-hearted thanks to Dr. Joe Dhanith P R, Project Guide, and the Head of the Department, SCOPE, Vellore Institute of Technology, Chennai, for their valuable support and encouragement to take up and complete the thesis.")
+    add_body("My sincere thanks to all the faculty and staff members at Vellore Institute of Technology, Chennai, who helped me acquire the requisite knowledge. I would like to thank my parents for their support. It is indeed a pleasure to thank my friends who encouraged me to take up and complete this task.")
     add_p("", space_after=36)
-    add_p("S. BHAVYA SRI", align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, size=12)
+    add_p("Place: Chennai", align=WD_ALIGN_PARAGRAPH.LEFT, size=12)
+    p_ack_sig = doc.add_paragraph()
+    p_ack_sig.paragraph_format.line_spacing = 1.3
+    r_dt = p_ack_sig.add_run("Date: December 2025")
+    r_dt.font.name = 'Times New Roman'
+    r_dt.font.size = Pt(12)
+    r_sp = p_ack_sig.add_run("\t\t\t\t\t\t")
+    r_nm = p_ack_sig.add_run("S. BHAVYA SRI\n\t\t\t\t\t\t(22MIA1010)")
+    r_nm.font.name = 'Times New Roman'
+    r_nm.font.size = Pt(12)
+    r_nm.bold = True
     
     doc.add_page_break()
 
@@ -278,10 +359,10 @@ def build_elaborate_vit_report():
     
     toc_data = [
         "Title Page",
-        "Declaration by Candidate",
-        "Bonafide Certificate",
+        "Declaration",
+        "Certificate",
         "Abstract",
-        "Acknowledgements",
+        "Acknowledgement",
         "Table of Contents",
         "List of Figures",
         "List of Tables",
@@ -359,7 +440,7 @@ def build_elaborate_vit_report():
         p.paragraph_format.space_after = Pt(3)
         p.paragraph_format.line_spacing = 1.3
         
-        is_bold = item.startswith("CHAPTER") or item.startswith("APPENDICES") or item.startswith("REFERENCES") or item in ["Title Page", "Abstract", "Table of Contents"]
+        is_bold = item.startswith("CHAPTER") or item.startswith("APPENDICES") or item.startswith("REFERENCES") or item in ["Title Page", "Declaration", "Certificate", "Abstract", "Acknowledgement", "Table of Contents", "List of Figures", "List of Tables", "List of Symbols, Abbreviations and Nomenclature"]
         is_chapter = item.startswith("CHAPTER") or item in ["APPENDICES", "REFERENCES (IEEE Citation Format)"]
         
         if is_chapter:
