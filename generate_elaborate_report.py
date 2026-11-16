@@ -179,7 +179,7 @@ def build_elaborate_vit_report():
     
     add_p("A project report on", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=12, space_before=16, space_after=14)
     
-    add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_after=18)
+    add_p("ATGCO-IDS: ADAPTIVE TRUST GRAPH CONSENSUS OPTIMIZATION FOR EXPLAINABLE AND AUTONOMOUS INTRUSION DETECTION", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_after=18)
     
     add_p("Submitted in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14, space_after=14)
     
@@ -206,7 +206,7 @@ def build_elaborate_vit_report():
     # =========================================================
     # 2. TITLE PAGE
     # =========================================================
-    add_p("ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_before=14, space_after=16)
+    add_p("ATGCO-IDS: ADAPTIVE TRUST GRAPH CONSENSUS OPTIMIZATION FOR EXPLAINABLE AND AUTONOMOUS INTRUSION DETECTION", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=20, space_before=14, space_after=16)
     
     add_p("Submitted in partial fulfillment for the award of the degree of", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=14, space_after=12)
     
@@ -248,7 +248,7 @@ def build_elaborate_vit_report():
         
     add_p("DECLARATION", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, underline=True, space_after=16)
     
-    add_body("I hereby declare that the thesis entitled “ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS” submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), VIT Chennai.")
+    add_body("I hereby declare that the thesis entitled “ATGCO-IDS: ADAPTIVE TRUST GRAPH CONSENSUS OPTIMIZATION FOR EXPLAINABLE AND AUTONOMOUS INTRUSION DETECTION” submitted by me, for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics, Vellore Institute of Technology, Chennai, is a record of bonafide work carried out by me under the supervision of Dr. Joe Dhanith P R, Assistant Professor, School of Computer Science and Engineering (SCOPE), VIT Chennai.")
     add_p("", space_after=10)
     add_body("I further declare that the work reported in this thesis has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.")
     
@@ -284,7 +284,7 @@ def build_elaborate_vit_report():
     add_p("School of Computer Science and Engineering", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, space_after=6)
     add_p("CERTIFICATE", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16, space_after=14)
     
-    add_body("This is to certify that the report entitled “ATGC-MACIDS: ADAPTIVE TRUST GRAPH CONSENSUS MULTI-AGENT INTRUSION DETECTION SYSTEM FOR HIGH-THROUGHPUT ENTERPRISE SUBNETS” is prepared and submitted by S. BHAVYA SRI (22MIA1010) to Vellore Institute of Technology, Chennai, in partial fulfillment of the requirement for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics programme is a bonafide record carried out under my guidance. The project fulfills the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma and the same is certified.")
+    add_body("This is to certify that the report entitled “ATGCO-IDS: ADAPTIVE TRUST GRAPH CONSENSUS OPTIMIZATION FOR EXPLAINABLE AND AUTONOMOUS INTRUSION DETECTION” is prepared and submitted by S. BHAVYA SRI (22MIA1010) to Vellore Institute of Technology, Chennai, in partial fulfillment of the requirement for the award of the degree of M.Tech. (Integrated) Computer Science and Engineering with Specialization in Business Analytics programme is a bonafide record carried out under my guidance. The project fulfills the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma and the same is certified.")
     
     add_p("", space_after=18)
     add_p("Signature of the Guide:", align=WD_ALIGN_PARAGRAPH.LEFT, bold=True, size=12)
@@ -320,9 +320,9 @@ def build_elaborate_vit_report():
     # =========================================================
     add_p("ABSTRACT", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=14, underline=True, space_after=12)
     add_body("Modern enterprise networks face an escalating threat landscape characterized by high-throughput traffic, sophisticated zero-day exploits, and distributed multi-vector attacks designed to evade traditional perimeter defenses. Standard Network Intrusion Detection Systems (NIDS) often rely on centralized inspection engines or isolated machine learning models. However, centralized approaches introduce single-point-of-failure risks, bandwidth bottlenecks, and severe privacy concerns, while localized ML models lack context regarding cross-subnet lateral movement and are highly vulnerable to adversarial graph topology manipulation and Sybil node compromise.")
-    add_body("To address these critical security limitations, this thesis presents ATGC-MACIDS (Adaptive Trust Graph Consensus Multi-Agent Intrusion Detection System), a novel decentralized cybersecurity framework that combines spatio-temporal Graph Neural Networks (GNNs), dynamic reputation-based trust evaluation, Jacobi vector consensus, and automated threat explainability mapped directly to the MITRE ATT&CK knowledge matrix.")
-    add_body("In ATGC-MACIDS, enterprise networks are modeled as dynamic spatial-temporal attributed graphs, where network entities (IP hosts, subnets, routers) act as nodes and telemetry flows represent directed weighted edges. Distributed local perception agents execute a Spatio-Temporal Graph Attention Network (ST-GAT) encoder to capture complex relational topologic dependencies and inter-snapshot temporal traffic dynamics. To maintain consensus across untrusted enterprise subnets without relying on a centralized coordinator, agents participate in an Adaptive Trust Jacobi Consensus protocol (ATGCO). The framework dynamically computes peer reputation weights based on historical decision fidelity, spatial prediction agreement, and statistical entropy, automatically down-weighting or isolating compromised, Byzantine, or Sybil nodes.")
-    add_body("Rigorous empirical evaluation was conducted using the benchmark UNSW-NB15 dataset comprising 257,673 real-world network traffic records partitioned into 172 temporal graph snapshots. ATGC-MACIDS achieved exceptional detection performance with 96.40% Overall Accuracy, 96.15% F1-Score, 96.75% Precision, 95.55% Recall, and an Area Under the ROC Curve (ROC-AUC) of 0.9820, while maintaining a False Positive Rate (FPR) of just 3.80%. Furthermore, the system demonstrated ultra-low per-sample inference latency of 0.55 milliseconds and rapid Jacobi consensus convergence (<5 iterations), proving its feasibility for line-rate enterprise deployment. Under simulated adversarial node corruption (up to 30% compromised agents), ATGC-MACIDS maintained 92.10% accuracy, outperforming standard Federated Learning and non-trust consensus algorithms by over 14.3%.")
+    add_body("To address these critical security limitations, this thesis presents ATGCO-IDS (Adaptive Trust Graph Consensus Optimization for Explainable and Autonomous Intrusion Detection), a novel decentralized cybersecurity framework that combines spatio-temporal Graph Neural Networks (GNNs), dynamic reputation-based trust evaluation, Jacobi vector consensus, and automated threat explainability mapped directly to the MITRE ATT&CK knowledge matrix.")
+    add_body("In ATGCO-IDS, enterprise networks are modeled as dynamic spatial-temporal attributed graphs, where network entities (IP hosts, subnets, routers) act as nodes and telemetry flows represent directed weighted edges. Distributed local perception agents execute a Spatio-Temporal Graph Attention Network (ST-GAT) encoder to capture complex relational topologic dependencies and inter-snapshot temporal traffic dynamics. To maintain consensus across untrusted enterprise subnets without relying on a centralized coordinator, agents participate in an Adaptive Trust Jacobi Consensus protocol (ATGCO). The framework dynamically computes peer reputation weights based on historical decision fidelity, spatial prediction agreement, and statistical entropy, automatically down-weighting or isolating compromised, Byzantine, or Sybil nodes.")
+    add_body("Rigorous empirical evaluation was conducted using the benchmark UNSW-NB15 dataset comprising 257,673 real-world network traffic records partitioned into 172 temporal graph snapshots. ATGCO-IDS achieved exceptional detection performance with 96.40% Overall Accuracy, 96.15% F1-Score, 96.75% Precision, 95.55% Recall, and an Area Under the ROC Curve (ROC-AUC) of 0.9820, while maintaining a False Positive Rate (FPR) of just 3.80%. Furthermore, the system demonstrated ultra-low per-sample inference latency of 0.55 milliseconds and rapid Jacobi consensus convergence (<5 iterations), proving its feasibility for line-rate enterprise deployment. Under simulated adversarial node corruption (up to 30% compromised agents), ATGCO-IDS maintained 92.10% accuracy, outperforming standard Federated Learning and non-trust consensus algorithms by over 14.3%.")
     add_body("Keywords: Multi-Agent Intrusion Detection, Graph Neural Networks, Spatio-Temporal Attention, Distributed Jacobi Consensus, Adaptive Trust Engine, Sybil Defense, MITRE ATT&CK Mapping, Explainable Cybersecurity.")
     
     doc.add_page_break()
@@ -388,8 +388,8 @@ def build_elaborate_vit_report():
         "  2.6 Explainable AI (XAI) & Threat Knowledge Graph Mapping",
         "  2.7 Literature Gap Analysis & Summary Table",
         "",
-        "CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY (ATGC-MACIDS)",
-        "  3.1 Overview of the ATGC-MACIDS Paradigm",
+        "CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY (ATGCO-IDS)",
+        "  3.1 Overview of the ATGCO-IDS Paradigm",
         "  3.2 Dynamic Network Graph Construction & Temporal Graph Snapshots",
         "  3.3 Multi-Agent Architecture & Local Perception Nodes",
         "  3.4 Deep Temporal GNN Encoder (ST-GAT Architecture)",
@@ -463,7 +463,7 @@ def build_elaborate_vit_report():
     add_p("", space_after=6)
     
     fig_data = [
-        ["Figure 3.1", "High-Level System Architecture of the ATGC-MACIDS Framework"],
+        ["Figure 3.1", "High-Level System Architecture of the ATGCO-IDS Framework"],
         ["Figure 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Encoder Architecture"],
         ["Figure 3.3", "Adaptive Trust Evaluation Engine & Dynamic Peer Reputation Scoring Workflow"],
         ["Figure 4.1", "Training & Validation Loss / Accuracy Curves over 15 Epochs on UNSW-NB15"],
@@ -500,9 +500,9 @@ def build_elaborate_vit_report():
         ["Table 3.2", "Spatio-Temporal Graph Attention Network (ST-GAT) Hyperparameters"],
         ["Table 4.1", "UNSW-NB15 Dataset Traffic Distribution across 9 Attack Categories"],
         ["Table 4.2", "Hardware & Software Experimental Execution Environment"],
-        ["Table 4.3", "Quantitative Performance Benchmark of Baseline vs. ATGC-MACIDS"],
+        ["Table 4.3", "Quantitative Performance Benchmark of Baseline vs. ATGCO-IDS"],
         ["Table 4.4", "Per-Category Intrusion Detection Metrics on UNSW-NB15 Test Partition"],
-        ["Table 4.5", "Ablation Study of ATGC-MACIDS Architectural Components"],
+        ["Table 4.5", "Ablation Study of ATGCO-IDS Architectural Components"],
         ["Table C.1", "Complete Feature Schema and Description of UNSW-NB15 Telemetry"]
     ]
     
@@ -646,7 +646,7 @@ def build_elaborate_vit_report():
     add_bullet("Automatically maps detected threat graphs to standardized MITRE ATT&CK TTP tactics to enable rapid SOC incident response.")
 
     add_heading_2("1.8 Research Objectives & Key Contributions")
-    add_body("To address the aforementioned security challenges, this research formulates and implements ATGC-MACIDS. The specific research objectives and contributions of this thesis are as follows:")
+    add_body("To address the aforementioned security challenges, this research formulates and implements ATGCO-IDS. The specific research objectives and contributions of this thesis are as follows:")
     add_bullet("Design of a Spatio-Temporal Graph Attention Network (ST-GAT): Formulated a deep dual-stage architecture combining multi-head spatial attention with Gated Recurrent Units (GRU) to model dynamic host relationships and inter-snapshot temporal traffic dynamics.")
     add_bullet("Development of the ATGCO Adaptive Trust Jacobi Consensus Engine: Formulated a novel decentralized Jacobi vector consensus algorithm governed by dynamic reputation scoring (T_ij(t)) that guarantees rapid convergence while resisting up to 30% adversarial node corruption.")
     add_bullet("Integration of MITRE ATT&CK Cyber Threat Knowledge Graph (CT-KG): Developed an automated threat translation pipeline that projects GNN feature saliency scores and graph topology anomalies onto standardized MITRE ATT&CK tactics (e.g., DoS T1498, Network Service Discovery T1046, Exploit Public App T1190).")
@@ -656,7 +656,7 @@ def build_elaborate_vit_report():
     add_heading_2("1.9 Organization of the Thesis Report")
     add_body("The remainder of this project report is organized as follows:")
     add_body("Chapter 2 presents a comprehensive literature review of historical intrusion detection paradigms, shallow machine learning vs. deep learning models, graph neural networks, multi-agent consensus protocols, and explainable AI in cybersecurity.")
-    add_body("Chapter 3 details the system architecture and mathematical methodology of ATGC-MACIDS, including dynamic graph construction, ST-GAT encoder, Adaptive Trust Jacobi consensus, dual loss optimization, and algorithmic pseudocode.")
+    add_body("Chapter 3 details the system architecture and mathematical methodology of ATGCO-IDS, including dynamic graph construction, ST-GAT encoder, Adaptive Trust Jacobi consensus, dual loss optimization, and algorithmic pseudocode.")
     add_body("Chapter 4 discusses the experimental design, dataset characterization (UNSW-NB15), hyperparameter setup, baseline comparison, quantitative metrics, robustness testing, latency benchmarks, and ablation studies.")
     add_body("Chapter 5 presents an in-depth discussion of empirical findings, feature saliency interpretability (SHAP), MITRE ATT&CK knowledge graph mapping, SIEM web dashboard implementation, and operational deployment considerations.")
     add_body("Chapter 6 concludes the report with a summary of key research contributions, empirical takeaways, limitations, and future research directions.")
@@ -744,7 +744,7 @@ def build_elaborate_vit_report():
         ["Veličković et al. (2018)", "Graph Attention", "Spatial Graph", "Central", "None", "Low", "Medium"],
         ["Al-Sawwa et al. (2024) [1]", "BFT Multi-Agent", "Tabular", "Distributed", "Unweighted", "High", "Low"],
         ["Das et al. (2024) [4]", "Trust Vehicular", "Tabular", "Distributed", "Beta Trust", "Medium", "Medium"],
-        ["ATGC-MACIDS (Proposed)", "ST-GAT + ATGCO", "Spatio-Temporal", "Decentralized", "Adaptive Trust", "Very Low", "Very High"]
+        ["ATGCO-IDS (Proposed)", "ST-GAT + ATGCO", "Spatio-Temporal", "Decentralized", "Adaptive Trust", "Very Low", "Very High"]
     ]
     
     add_custom_table(["Model / Study", "Core Algorithm", "Topology Model", "Architecture", "Trust Defense", "Latency", "Zero-Day Res."], lit_matrix)
@@ -755,17 +755,17 @@ def build_elaborate_vit_report():
     # CHAPTER 3: SYSTEM ARCHITECTURE & METHODOLOGY
     # =========================================================
     add_heading_1("CHAPTER 3")
-    add_heading_1("SYSTEM ARCHITECTURE & METHODOLOGY (ATGC-MACIDS)")
+    add_heading_1("SYSTEM ARCHITECTURE & METHODOLOGY (ATGCO-IDS)")
     
-    add_heading_2("3.1 Overview of the ATGC-MACIDS Paradigm")
+    add_heading_2("3.1 Overview of the ATGCO-IDS Paradigm")
 
-    add_body("The proposed ATGC-MACIDS framework establishes a novel, decentralized multi-agent intrusion detection paradigm specifically engineered for high-throughput enterprise subnets. The architecture integrates four core functional modules operating in a closed-loop pipeline: (1) Dynamic Spatio-Temporal Graph Construction Module; (2) Deep ST-GAT Feature Encoder; (3) Adaptive Trust Peer Reputation Engine; and (4) Jacobi Vector Consensus Protocol with MITRE ATT&CK Threat Mapping.")
-    add_body("Unlike legacy centralized NIDS platforms, ATGC-MACIDS deploys autonomous local perception agents within individual enterprise subnet segments (e.g., DMZ, Corporate Workstations, Internal Database Cluster, Cloud Edge Gateway). Each agent processes local NetFlow telemetry in parallel, building continuous spatio-temporal graph snapshots. Local ST-GAT encoders extract high-dimensional spatio-temporal threat embeddings, which are subsequently refined through peer-to-peer Jacobi vector consensus weighted by dynamic adaptive trust scores.")
+    add_body("The proposed ATGCO-IDS framework establishes a novel, decentralized multi-agent intrusion detection paradigm specifically engineered for high-throughput enterprise subnets. The architecture integrates four core functional modules operating in a closed-loop pipeline: (1) Dynamic Spatio-Temporal Graph Construction Module; (2) Deep ST-GAT Feature Encoder; (3) Adaptive Trust Peer Reputation Engine; and (4) Jacobi Vector Consensus Protocol with MITRE ATT&CK Threat Mapping.")
+    add_body("Unlike legacy centralized NIDS platforms, ATGCO-IDS deploys autonomous local perception agents within individual enterprise subnet segments (e.g., DMZ, Corporate Workstations, Internal Database Cluster, Cloud Edge Gateway). Each agent processes local NetFlow telemetry in parallel, building continuous spatio-temporal graph snapshots. Local ST-GAT encoders extract high-dimensional spatio-temporal threat embeddings, which are subsequently refined through peer-to-peer Jacobi vector consensus weighted by dynamic adaptive trust scores.")
     add_body("This integrated approach solves the core limitations of existing systems: GNN spatial attention captures cross-host attack topologies; temporal GRU modules track multi-stage attack evolution; local agent execution eliminates central processing bottlenecks; Jacobi consensus provides rapid distributed vector agreement; adaptive trust scoring defends against Byzantine and Sybil node corruption; and MITRE ATT&CK mapping delivers transparent threat explainability to SOC analysts.")
 
-    add_body("ATGC-MACIDS is engineered as a fully decentralized, multi-agent cybersecurity framework designed to operate across high-throughput enterprise subnets. The system replaces centralized SIEM aggregation with a distributed peer-to-peer network of autonomous local perception agents. Each agent monitors a designated network segment, constructs continuous spatio-temporal attributed graph snapshots, executes a local Spatio-Temporal Graph Attention Network (ST-GAT) encoder, participates in an Adaptive Trust Jacobi Consensus protocol (ATGCO), and outputs real-time threat predictions mapped to MITRE ATT&CK tactics.")
+    add_body("ATGCO-IDS is engineered as a fully decentralized, multi-agent cybersecurity framework designed to operate across high-throughput enterprise subnets. The system replaces centralized SIEM aggregation with a distributed peer-to-peer network of autonomous local perception agents. Each agent monitors a designated network segment, constructs continuous spatio-temporal attributed graph snapshots, executes a local Spatio-Temporal Graph Attention Network (ST-GAT) encoder, participates in an Adaptive Trust Jacobi Consensus protocol (ATGCO), and outputs real-time threat predictions mapped to MITRE ATT&CK tactics.")
     
-    add_figure_image("threat_knowledge_graph.png", "Figure 3.1: High-Level System Architecture of the ATGC-MACIDS Framework")
+    add_figure_image("threat_knowledge_graph.png", "Figure 3.1: High-Level System Architecture of the ATGCO-IDS Framework")
 
     add_heading_2("3.2 Dynamic Network Graph Construction & Temporal Graph Snapshots")
 
@@ -810,7 +810,7 @@ def build_elaborate_vit_report():
     add_body("In Stage 1, for a given host node v_i with input feature vector x_i, the spatial multi-head GAT layer computes dynamic attention coefficients alpha_ij^h across all neighbor nodes v_j in N(v_i) for attention head h in {1, 2, ..., H}: alpha_ij^h = Softmax_j( LeakyReLU( a_h^T [ W_h x_i || W_h x_j ] ) ). Weight matrix W_h projects node features into a higher-dimensional latent space, while parameterized vector a_h computes pairwise directional attention. Aggregating multi-head attention outputs yields spatial node representation z_i(t) in R^64.")
     add_body("In Stage 2, spatial node representation z_i(t) is fed into a temporal GRU module operating across consecutive snapshot windows t-1, t, t+1. The GRU updates hidden node state vector h_i(t) via gating mechanisms: Update Gate r_i(t) = Sigmoid( W_r z_i(t) + U_r h_i(t-1) ), Reset Gate u_i(t) = Sigmoid( W_u z_i(t) + U_u h_i(t-1) ), and Candidate Hidden State h~_i(t) = Tanh( W_h z_i(t) + U_h ( r_i(t) * h_i(t-1) ) ). The final output h_i(t) = (1 - u_i(t)) * h_i(t-1) + u_i(t) * h~_i(t) encodes dual spatio-temporal features, capturing both structural neighborhood anomalies and time-series attack progression.")
 
-    add_body("To capture spatial graph topology and inter-snapshot temporal traffic evolution simultaneously, ATGC-MACIDS employs a Spatio-Temporal Graph Attention Network (ST-GAT) encoder. The ST-GAT module operates in two sequential stages:")
+    add_body("To capture spatial graph topology and inter-snapshot temporal traffic evolution simultaneously, ATGCO-IDS employs a Spatio-Temporal Graph Attention Network (ST-GAT) encoder. The ST-GAT module operates in two sequential stages:")
     add_heading_3("Stage 1: Multi-Head Spatial Graph Attention Layer")
     add_body("For a given graph snapshot G_t, spatial attention coefficients between host node i and its neighboring node j in N_i are computed using parameterized self-attention:")
     add_p("e_ij = LeakyReLU( a^T [ W h_i || W h_j ] )", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=11, space_after=6)
@@ -831,7 +831,7 @@ def build_elaborate_vit_report():
     add_body("Spatial Prediction Similarity S_ij^Spatial(t) measures cosine agreement between peer alert vector h_j(t) and local expectation vector h_i(t): S_ij = (h_i . h_j) / (||h_i|| * ||h_j||). Historical Decision Fidelity F_ij^Fidelity(t) tracks peer historical prediction accuracy against verified ground-truth alerts over a sliding window of 100 past consensus rounds. Statistical Alert Entropy E_j^Entropy(t) measures normalized Shannon entropy of peer alert broadcasts: E_j = - sum( p_m * log2(p_m) ) / log2(M), detecting high-variance or random alert broadcasts indicative of Sybil attack manipulation.")
     add_body("If computed peer trust score T_ij(t) falls below critical threshold T_thresh = 0.35, the trust engine immediately sets consensus edge weight W_ij = 0, temporarily severing consensus communication with peer a_j. If trust remains below threshold for more than 10 consecutive time windows, peer a_j is permanently blacklisted and reported to SOC management. This dynamic isolation mechanism preserves consensus integrity even under 30% node corruption.")
 
-    add_body("To defend against compromised, Byzantine, or Sybil agents broadcasting corrupt consensus vectors, ATGC-MACIDS integrates a dynamic reputation engine. Each agent i continuously maintains a peer trust matrix T_ij(t) in [0, 1] evaluating neighbor agent j. Trust is computed as a multi-component composite function:")
+    add_body("To defend against compromised, Byzantine, or Sybil agents broadcasting corrupt consensus vectors, ATGCO-IDS integrates a dynamic reputation engine. Each agent i continuously maintains a peer trust matrix T_ij(t) in [0, 1] evaluating neighbor agent j. Trust is computed as a multi-component composite function:")
     add_p("T_ij(t) = w_1 * S_ij(t) + w_2 * R_ij(t) + w_3 * H_ij(t)", align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, size=11, space_after=6)
     add_body("where w_1 + w_2 + w_3 = 1. The three trust components are defined as:")
     add_bullet("Spatial Prediction Agreement (S_ij(t)): Cosine similarity between local alert vector z_i and peer alert vector z_j: S_ij(t) = (z_i . z_j) / (||z_i|| ||z_j||).")
@@ -853,7 +853,7 @@ def build_elaborate_vit_report():
 
     add_heading_2("3.7 Optimization Objective & Dual Loss Functions")
 
-    add_body("Training the ATGC-MACIDS framework involves optimizing a joint dual loss function L_total that simultaneously minimizes GNN multi-class classification error and penalizes consensus vector variance across trust-weighted peer agents.")
+    add_body("Training the ATGCO-IDS framework involves optimizing a joint dual loss function L_total that simultaneously minimizes GNN multi-class classification error and penalizes consensus vector variance across trust-weighted peer agents.")
     add_body("The classification loss component L_cls is formulated as multi-class Focal Loss to address severe class imbalance across UNSW-NB15 attack categories: L_cls = - sum_{c=1}^C alpha_c (1 - p_c)^gamma_focal log(p_c), where p_c represents predicted probability for ground-truth class c, alpha_c is class-weight balancing factor, and gamma_focal = 2.0 is the focusing parameter suppressing easy benign samples.")
     add_body("The consensus regularization loss component L_consensus penalizes discrepancy between local node representation h_i and trust-weighted neighbor consensus state h*_j: L_consensus = sum_{i=1}^K sum_{j in N(i)} T_ij * || h_i - h_j ||_2^2. The total optimization objective is defined as: L_total = L_cls + lambda_cons * L_consensus + lambda_reg * || Theta ||_2^2, where lambda_cons = 0.15 and lambda_reg = 1e-4 control consensus regularization weight and L2 weight decay parameter regularization.")
 
@@ -867,20 +867,20 @@ def build_elaborate_vit_report():
 
     add_heading_2("3.8 MITRE ATT&CK Threat Knowledge Graph Mapping Engine")
 
-    add_body("To bridge deep neural network predictions with operational cybersecurity workflows, ATGC-MACIDS incorporates an automated Threat Knowledge Graph (CT-KG) Mapping Engine. The engine translates GNN output probability vectors and node feature saliency scores directly into standardized MITRE ATT&CK Tactics, Techniques, and Procedures (TTPs).")
+    add_body("To bridge deep neural network predictions with operational cybersecurity workflows, ATGCO-IDS incorporates an automated Threat Knowledge Graph (CT-KG) Mapping Engine. The engine translates GNN output probability vectors and node feature saliency scores directly into standardized MITRE ATT&CK Tactics, Techniques, and Procedures (TTPs).")
     add_body("The CT-KG engine maintains a relational knowledge graph linking 9 UNSW-NB15 attack classes to MITRE ATT&CK technique IDs: DoS -> T1498 (Network Denial of Service), Reconnaissance -> T1046 (Network Service Discovery), Exploits -> T1190 (Exploit Public-Facing Application), Backdoor -> T1059 (Command and Scripting Interpreter), Fuzzers -> T1595 (Active Scanning), Generic -> T1068 (Exploitation for Privilege Escalation), Analysis -> T1592 (Gather Victim Host Information), Shellcode -> T1055 (Process Injection), Worms -> T1080 (Taint Shared Content).")
     add_body("When an anomaly is detected, the CT-KG engine queries top salient node features from Integrated Gradients attribution and generates a structured STIX 2.1 threat intelligence bundle containing host IP identities, detected attack category, mapped MITRE TTP ID, severity score, and automated mitigation recommendation (e.g., 'Isolate host IP 192.168.1.45 via IEEE 802.1X NAC, block TCP port 445 on edge firewall').")
 
-    add_body("To translate abstract GNN embeddings into actionable intelligence for SOC analysts, ATGC-MACIDS integrates an automated Cyber Threat Knowledge Graph (CT-KG) mapping module. Feature saliency vectors and anomalous subgraph edges are queried against a stored MITRE ATT&CK ontology matrix, automatically mapping detected anomaly clusters to standardized Tactics, Techniques, and Procedures (TTPs), such as DoS (T1498), Network Service Discovery (T1046), and Exploitation of Public-Facing Applications (T1190).")
+    add_body("To translate abstract GNN embeddings into actionable intelligence for SOC analysts, ATGCO-IDS integrates an automated Cyber Threat Knowledge Graph (CT-KG) mapping module. Feature saliency vectors and anomalous subgraph edges are queried against a stored MITRE ATT&CK ontology matrix, automatically mapping detected anomaly clusters to standardized Tactics, Techniques, and Procedures (TTPs), such as DoS (T1498), Network Service Discovery (T1046), and Exploitation of Public-Facing Applications (T1190).")
 
     add_heading_2("3.9 System Implementation & Algorithmic Pseudocode")
 
-    add_body("The complete ATGC-MACIDS pipeline is implemented in Python 3.11 utilizing PyTorch 2.2.0, PyTorch Geometric (PyG 2.5.0), NetworkX 3.2, and NumPy 1.26. Peer-to-peer agent networking is implemented using gRPC over HTTP/2 with mutual TLS 1.3 encryption. Algorithmic execution follows a synchronous 6-step loop executed every 500ms time window.")
+    add_body("The complete ATGCO-IDS pipeline is implemented in Python 3.11 utilizing PyTorch 2.2.0, PyTorch Geometric (PyG 2.5.0), NetworkX 3.2, and NumPy 1.26. Peer-to-peer agent networking is implemented using gRPC over HTTP/2 with mutual TLS 1.3 encryption. Algorithmic execution follows a synchronous 6-step loop executed every 500ms time window.")
     add_body("Step 1: Network flow collectors ingest NetFlow telemetry streams and build graph snapshot G_t = (V_t, E_t, X_t). Step 2: Local ST-GAT encoder computes multi-head spatial attention and temporal GRU state updates to generate local threat vector h_i(0). Step 3: Adaptive Trust Engine evaluates peer reputation matrix T_ij based on spatial similarity, decision fidelity, and alert entropy. Step 4: Agents exchange alert vectors and execute Jacobi vector consensus iterations until residual R(m) < 1e-5. Step 5: Converged consensus vector H* is passed through Softmax classification head to assign attack labels. Step 6: If an attack is detected, CT-KG engine maps anomaly subgraphs to MITRE ATT&CK TTPs and dispatches alert payload to SOC web dashboard.")
 
-    add_body("The algorithmic workflow of ATGC-MACIDS is formalized in Algorithm 3.1 below:")
+    add_body("The algorithmic workflow of ATGCO-IDS is formalized in Algorithm 3.1 below:")
     
-    add_code_block("""Algorithm 3.1: ATGC-MACIDS Spatio-Temporal GNN & Jacobi Trust Consensus Loop
+    add_code_block("""Algorithm 3.1: ATGCO-IDS Spatio-Temporal GNN & Jacobi Trust Consensus Loop
 --------------------------------------------------------------------------------
 Input  : Dynamic Graph Snapshots G_t = (V_t, E_t, X_t), Trust Matrix T_ij, Iterations K
 Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mapping
@@ -931,11 +931,11 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
     
     add_heading_2("4.1 Benchmark Dataset Characterization (UNSW-NB15)")
 
-    add_body("Rigorous empirical evaluation of ATGC-MACIDS was conducted on the UNSW-NB15 benchmark dataset, created by the Cyber Range Lab of Australian Centre for Cyber Security (ACCS). UNSW-NB15 was generated using IXIA PerfectStorm toolsets to simulate realistic synthetic network traffic containing modern attack vectors and complex benign background activities.")
+    add_body("Rigorous empirical evaluation of ATGCO-IDS was conducted on the UNSW-NB15 benchmark dataset, created by the Cyber Range Lab of Australian Centre for Cyber Security (ACCS). UNSW-NB15 was generated using IXIA PerfectStorm toolsets to simulate realistic synthetic network traffic containing modern attack vectors and complex benign background activities.")
     add_body("The dataset contains 2,540,044 raw flow records across 49 features. The official benchmark partition comprises 257,673 selected flow records split into 175,341 training flows (68.06%) and 82,332 testing flows (31.94%). Traffic encompasses 9 distinct attack categories alongside benign traffic: Normal (56.00%), Generic (22.70%), Exploits (13.30%), Fuzzers (7.45%), DoS (4.75%), Reconnaissance (4.25%), Analysis (0.78%), Backdoors (0.68%), Shellcode (0.59%), and Worms (0.05%).")
     add_body("UNSW-NB15 addresses key deficiencies of legacy datasets (such as KDD Cup 99 and NSL-KDD) by reflecting modern network protocol behavior, high-throughput flow volume, realistic IP address spaces, and contemporary exploit techniques. It provides a challenging benchmark for multi-class network anomaly detection.")
 
-    add_body("To rigorously evaluate the detection performance, robustness, and latency of ATGC-MACIDS, experiments were conducted using the benchmark UNSW-NB15 dataset. Created by the Cyber Centre at the Australian Centre for Cyber Security (ACCS), UNSW-NB15 reflects modern realistic network traffic dynamics, capturing low-footprint attack vectors and complex background noise generated by IXIA PerfectStorm tools.")
+    add_body("To rigorously evaluate the detection performance, robustness, and latency of ATGCO-IDS, experiments were conducted using the benchmark UNSW-NB15 dataset. Created by the Cyber Centre at the Australian Centre for Cyber Security (ACCS), UNSW-NB15 reflects modern realistic network traffic dynamics, capturing low-footprint attack vectors and complex background noise generated by IXIA PerfectStorm tools.")
     add_body("The evaluation dataset comprises 257,673 records (175,341 training flows and 82,332 testing flows) containing 49 statistical features. The dataset includes normal benign traffic and 9 distinct attack categories: Fuzzers, Analysis, Backdoors, DoS, Exploits, Generic, Reconnaissance, Shellcode, and Worms.")
 
     add_p("", space_after=4)
@@ -990,10 +990,10 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
 
     add_heading_2("4.4 Baseline Models for Comparative Evaluation")
 
-    add_body("To establish comprehensive performance benchmarks, ATGC-MACIDS was evaluated against five representative baseline models spanning shallow machine learning, deep sequential models, standard GNNs, and distributed federated learning architectures.")
-    add_body("1. Random Forest (Breiman, 2001): Standard ensemble classifier trained on 49 tabular flow features using 100 decision trees. 2. DeepIDS (Chen et al., 2020): Deep 1D-CNN + LSTM sequential model processing flow sequences. 3. Standard GCN: 2-layer Graph Convolutional Network operating on static graph snapshots without spatial attention or temporal GRU. 4. Multi-Agent FedAvg: Distributed multi-agent GNN framework utilizing standard Federated Averaging without trust filtering. 5. ATGC-MACIDS (Proposed): Complete proposed framework incorporating ST-GAT, Adaptive Trust Engine, and Jacobi consensus.")
+    add_body("To establish comprehensive performance benchmarks, ATGCO-IDS was evaluated against five representative baseline models spanning shallow machine learning, deep sequential models, standard GNNs, and distributed federated learning architectures.")
+    add_body("1. Random Forest (Breiman, 2001): Standard ensemble classifier trained on 49 tabular flow features using 100 decision trees. 2. DeepIDS (Chen et al., 2020): Deep 1D-CNN + LSTM sequential model processing flow sequences. 3. Standard GCN: 2-layer Graph Convolutional Network operating on static graph snapshots without spatial attention or temporal GRU. 4. Multi-Agent FedAvg: Distributed multi-agent GNN framework utilizing standard Federated Averaging without trust filtering. 5. ATGCO-IDS (Proposed): Complete proposed framework incorporating ST-GAT, Adaptive Trust Engine, and Jacobi consensus.")
 
-    add_body("To establish empirical superiority, ATGC-MACIDS was benchmarked against five representative state-of-the-art intrusion detection baseline models:")
+    add_body("To establish empirical superiority, ATGCO-IDS was benchmarked against five representative state-of-the-art intrusion detection baseline models:")
     add_bullet("Random Forest (Breiman 2001 [2]): Tabular ensemble model (100 decision trees).")
     add_bullet("Support Vector Machine (SVM): RBF kernel classifier operating on raw flow vectors.")
     add_bullet("DeepIDS (Chen et al. 2020 [3]): Sequential LSTM model processing flow windows.")
@@ -1002,14 +1002,14 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
 
     add_heading_2("4.5 Quantitative Evaluation: Detection Accuracy & Metrics")
 
-    add_body("Performance metrics evaluated across all models include Overall Accuracy, Precision, Recall (Sensitivity), F1-Score, False Positive Rate (FPR), and Area Under the ROC Curve (ROC-AUC). Empirical evaluation results demonstrate that ATGC-MACIDS achieves state-of-the-art performance across all metrics.")
-    add_body("ATGC-MACIDS achieved 96.40% Accuracy, 96.75% Precision, 95.55% Recall, 96.15% F1-Score, 0.9820 ROC-AUC, and an ultra-low FPR of 3.80%. In comparison, Random Forest achieved 92.50% Accuracy and 6.20% FPR; DeepIDS achieved 91.80% Accuracy and 7.10% FPR; Standard GCN achieved 93.10% Accuracy and 5.50% FPR; and Multi-Agent FedAvg achieved 89.40% Accuracy and 8.90% FPR.")
+    add_body("Performance metrics evaluated across all models include Overall Accuracy, Precision, Recall (Sensitivity), F1-Score, False Positive Rate (FPR), and Area Under the ROC Curve (ROC-AUC). Empirical evaluation results demonstrate that ATGCO-IDS achieves state-of-the-art performance across all metrics.")
+    add_body("ATGCO-IDS achieved 96.40% Accuracy, 96.75% Precision, 95.55% Recall, 96.15% F1-Score, 0.9820 ROC-AUC, and an ultra-low FPR of 3.80%. In comparison, Random Forest achieved 92.50% Accuracy and 6.20% FPR; DeepIDS achieved 91.80% Accuracy and 7.10% FPR; Standard GCN achieved 93.10% Accuracy and 5.50% FPR; and Multi-Agent FedAvg achieved 89.40% Accuracy and 8.90% FPR.")
     add_body("Multi-class classification evaluation across individual attack categories demonstrated high F1-Scores: Normal (98.20%), DoS (95.40%), Reconnaissance (96.10%), Exploits (94.80%), Fuzzers (93.50%), Backdoor (91.20%), Generic (97.10%), Analysis (89.50%), and Shellcode (90.80%). The high multi-class precision confirms the model's ability to discriminate between nuanced attack categories.")
 
     add_body("Table 4.3 presents the overall multi-class intrusion detection performance across all benchmarked models on the UNSW-NB15 test partition.")
 
     add_p("", space_after=4)
-    add_p("Table 4.3: Quantitative Performance Benchmark of Baseline vs. ATGC-MACIDS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=11, space_after=4)
+    add_p("Table 4.3: Quantitative Performance Benchmark of Baseline vs. ATGCO-IDS", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=11, space_after=4)
     
     quant_perf = [
         ["Support Vector Machine", "84.20%", "83.10%", "85.00%", "81.30%", "0.8850", "11.50%", "0.12ms"],
@@ -1017,11 +1017,11 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
         ["DeepIDS (LSTM) [3]", "91.80%", "91.40%", "92.10%", "90.70%", "0.9480", "6.80%", "1.85ms"],
         ["Standard GCN", "93.10%", "92.80%", "93.70%", "91.90%", "0.9620", "5.40%", "0.42ms"],
         ["Multi-Agent FedAvg", "89.40%", "88.90%", "90.20%", "87.60%", "0.9240", "8.90%", "0.78ms"],
-        ["ATGC-MACIDS (Proposed)", "96.40%", "96.15%", "96.75%", "95.55%", "0.9820", "3.80%", "0.55ms"]
+        ["ATGCO-IDS (Proposed)", "96.40%", "96.15%", "96.75%", "95.55%", "0.9820", "3.80%", "0.55ms"]
     ]
     add_custom_table(["Model Architecture", "Accuracy", "F1-Score", "Precision", "Recall", "ROC-AUC", "FPR", "Latency"], quant_perf)
 
-    add_body("ATGC-MACIDS achieved an impressive 96.40% Accuracy and 96.15% F1-Score, outperforming the best baseline (Standard GCN) by +3.30% in accuracy and reducing False Positive Rate to 3.80%.")
+    add_body("ATGCO-IDS achieved an impressive 96.40% Accuracy and 96.15% F1-Score, outperforming the best baseline (Standard GCN) by +3.30% in accuracy and reducing False Positive Rate to 3.80%.")
 
     add_figure_image("training_performance.png", "Figure 4.1: Training & Validation Loss / Accuracy Curves over 15 Epochs on UNSW-NB15")
     add_figure_image("confusion_matrix.png", "Figure 4.2: Confusion Matrix of Multi-Class Intrusion Detection Performance")
@@ -1048,31 +1048,31 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
     add_heading_2("4.6 Robustness Analysis Against Adversarial Graph Attacks & Sybil Nodes")
 
     add_body("To evaluate defense capabilities against adversarial node corruption, we conducted robustness experiments simulating Byzantine and Sybil node behavior. We introduced corrupted peer agents broadcasting random, inverted, or malicious alert vectors into the consensus network, increasing the fraction of corrupted agents from 0% to 40%.")
-    add_body("Under 0% corrupt agents, Multi-Agent FedAvg achieved 89.40% accuracy while ATGC-MACIDS achieved 96.40%. When corrupted agent ratio increased to 20%, FedAvg accuracy dropped precipitously to 81.20% due to unweighted gradient averaging. At 30% corrupted agents, FedAvg degraded to 77.80% (FPR 18.50%), whereas ATGC-MACIDS maintained high accuracy of 92.10% (FPR 5.20%).")
+    add_body("Under 0% corrupt agents, Multi-Agent FedAvg achieved 89.40% accuracy while ATGCO-IDS achieved 96.40%. When corrupted agent ratio increased to 20%, FedAvg accuracy dropped precipitously to 81.20% due to unweighted gradient averaging. At 30% corrupted agents, FedAvg degraded to 77.80% (FPR 18.50%), whereas ATGCO-IDS maintained high accuracy of 92.10% (FPR 5.20%).")
     add_body("This exceptional resilience stems directly from the Adaptive Trust Engine. By continuously monitoring spatial similarity, decision fidelity, and alert entropy, the trust engine automatically detects corrupt peer broadcasts and sets consensus edge weights W_ij = 0, effectively isolating adversary nodes from corrupting global alert consensus.")
 
-    add_body("To evaluate resilience against compromised agents, experiments introduced synthetic Byzantine and Sybil nodes broadcasting random corrupt alert vectors. Figure 4.5 illustrates model accuracy under corrupt agent ratios ranging from 0% to 30%. While standard FedAvg accuracy crashed from 89.4% down to 77.8% under 30% corrupt nodes, ATGC-MACIDS maintained 92.10% accuracy due to adaptive trust isolation (T_ij -> 0).")
+    add_body("To evaluate resilience against compromised agents, experiments introduced synthetic Byzantine and Sybil nodes broadcasting random corrupt alert vectors. Figure 4.5 illustrates model accuracy under corrupt agent ratios ranging from 0% to 30%. While standard FedAvg accuracy crashed from 89.4% down to 77.8% under 30% corrupt nodes, ATGCO-IDS maintained 92.10% accuracy due to adaptive trust isolation (T_ij -> 0).")
 
     add_heading_2("4.7 Latency, Scalability, and Consensus Iteration Convergence Analysis")
 
-    add_body("Real-time enterprise deployment requires low per-sample inference latency and rapid consensus convergence. Experimental measurements confirm that ATGC-MACIDS achieves average per-sample inference latency of 0.55 milliseconds, enabling real-time processing of over 1,800 graph snapshots per second.")
+    add_body("Real-time enterprise deployment requires low per-sample inference latency and rapid consensus convergence. Experimental measurements confirm that ATGCO-IDS achieves average per-sample inference latency of 0.55 milliseconds, enabling real-time processing of over 1,800 graph snapshots per second.")
     add_body("Convergence analysis of the Jacobi vector consensus protocol demonstrated rapid error residual reduction. Starting from initial residual R(0) = 0.42, Jacobi iteration residual dropped to R(1) = 0.08 after 1 iteration, R(2) = 0.012 after 2 iterations, R(3) = 0.0018 after 3 iterations, and reached target threshold R(4) < 1e-5 after just 4 iterations. Total consensus convergence time averaged 1.2 milliseconds per window.")
     add_body("Scalability testing across increasing agent populations (K = 4, 8, 16, 32, 64 agents) demonstrated near-linear scaling, with total multi-agent execution overhead increasing by only 18% when expanding from 4 to 64 agents due to localized Jacobi message passing.")
 
-    add_body("Line-rate deployment requires ultra-low inference latency and rapid consensus convergence. ATGC-MACIDS achieved an average per-sample processing latency of 0.55ms. Furthermore, as shown in Figure 4.6, the Jacobi vector residual error collapsed below epsilon = 1e-4 in fewer than 5 consensus iterations.")
+    add_body("Line-rate deployment requires ultra-low inference latency and rapid consensus convergence. ATGCO-IDS achieved an average per-sample processing latency of 0.55ms. Furthermore, as shown in Figure 4.6, the Jacobi vector residual error collapsed below epsilon = 1e-4 in fewer than 5 consensus iterations.")
 
     add_heading_2("4.8 Ablation Studies (ST-GAT, Trust Engine, Consensus Layers)")
 
-    add_body("To quantify the individual contribution of each architectural component, we conducted systematic ablation experiments by progressively disabling key modules: (1) Full ATGC-MACIDS Framework (Baseline); (2) Variant A: Removing Spatial Attention (replacing GAT with standard GCN); (3) Variant B: Removing Temporal GRU (processing single snapshots without history); (4) Variant C: Removing Adaptive Trust Engine (using unweighted Jacobi consensus); (5) Variant D: Removing Jacobi Consensus (isolated agent classification).")
+    add_body("To quantify the individual contribution of each architectural component, we conducted systematic ablation experiments by progressively disabling key modules: (1) Full ATGCO-IDS Framework (Baseline); (2) Variant A: Removing Spatial Attention (replacing GAT with standard GCN); (3) Variant B: Removing Temporal GRU (processing single snapshots without history); (4) Variant C: Removing Adaptive Trust Engine (using unweighted Jacobi consensus); (5) Variant D: Removing Jacobi Consensus (isolated agent classification).")
     add_body("Ablation results: Full Model achieved 96.40% Accuracy. Variant A (No Attention) accuracy dropped to 94.10% (-2.30%), confirming that spatial attention is essential for prioritizing suspicious flow links. Variant B (No GRU) accuracy dropped to 93.50% (-2.90%), proving the importance of temporal sequence modeling. Variant C (No Trust) maintained 95.80% accuracy under benign conditions but degraded to 78.40% (-17.40%) under 30% adversarial node corruption. Variant D (No Consensus) accuracy dropped to 91.20% (-5.20%), demonstrating that peer consensus significantly enhances multi-subnet threat visibility.")
 
-    add_body("To quantify the individual contribution of each core component in ATGC-MACIDS, ablation experiments were conducted by disabling specific modules:")
+    add_body("To quantify the individual contribution of each core component in ATGCO-IDS, ablation experiments were conducted by disabling specific modules:")
 
     add_p("", space_after=4)
-    add_p("Table 4.5: Ablation Study of ATGC-MACIDS Architectural Components", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=11, space_after=4)
+    add_p("Table 4.5: Ablation Study of ATGCO-IDS Architectural Components", align=WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=11, space_after=4)
     
     ablation_data = [
-        ["Full ATGC-MACIDS Framework", "96.40%", "96.15%", "0.9820", "3.80%", "<5 Iterations"],
+        ["Full ATGCO-IDS Framework", "96.40%", "96.15%", "0.9820", "3.80%", "<5 Iterations"],
         ["w/o Spatial Attention (GCN Encoder)", "94.10%", "93.65%", "0.9650", "5.10%", "<5 Iterations"],
         ["w/o Temporal GRU (Static Snapshots)", "93.50%", "92.90%", "0.9580", "5.80%", "<5 Iterations"],
         ["w/o Adaptive Trust Engine (Equal Wt)", "90.20%", "89.70%", "0.9310", "8.20%", "12 Iterations"],
@@ -1097,11 +1097,11 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
 
     add_heading_2("5.2 Model Interpretability via Feature Saliency & Node Attribution")
 
-    add_body("Model interpretability is paramount for operational adoption in Security Operations Centers. ATGC-MACIDS integrates Integrated Gradients and SHAP (SHapley Additive exPlanations) attribution algorithms to compute exact feature saliency scores for every generated alert.")
+    add_body("Model interpretability is paramount for operational adoption in Security Operations Centers. ATGCO-IDS integrates Integrated Gradients and SHAP (SHapley Additive exPlanations) attribution algorithms to compute exact feature saliency scores for every generated alert.")
     add_body("Feature ranking analysis reveals the top 10 predictive attributes driving model decisions: 1. Source Bytes (sbytes, 18.5% importance); 2. Source TTL (sttl, 15.2%); 3. Source Load (sload, 13.8%); 4. Flow Duration (dur, 11.4%); 5. Destination Load (dload, 9.6%); 6. Connection State TTL (ct_state_ttl, 8.2%); 7. Destination Bytes (dbytes, 6.7%); 8. Source Port Count (ct_src_dport_ltm, 5.5%); 9. TCP Window Advertisement (swin, 4.3%); 10. Service Type (service, 3.8%).")
     add_body("Visualizing feature saliency profiles reveals distinct signature distributions across attack categories: DoS attacks exhibit extremely high sload and low dur; Reconnaissance scans exhibit elevated ct_state_ttl and varied destination ports; Exploits display high sbytes coupled with specific service port combinations. Presenting feature attribution bars alongside alert notifications provides SOC analysts with immediate, transparent rationale for incident verification.")
 
-    add_body("To provide SOC analysts with clear explanations for threat alerts, ATGC-MACIDS computes feature saliency gradients using Integrated Gradients and SHAP values.")
+    add_body("To provide SOC analysts with clear explanations for threat alerts, ATGCO-IDS computes feature saliency gradients using Integrated Gradients and SHAP values.")
 
     add_figure_image("feature_saliency.png", "Figure 5.1: Global Feature Saliency and SHAP Feature Attribution Ranking")
 
@@ -1109,11 +1109,11 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
 
     add_heading_2("5.3 Automated Mapping of Detected Anomalies to MITRE ATT&CK TTPs")
 
-    add_body("To convert model predictions into standardized incident response workflows, ATGC-MACIDS automatically maps anomaly subgraphs to the MITRE ATT&CK knowledge framework. Detected attacks are mapped to specific TTP IDs and tactic classifications.")
+    add_body("To convert model predictions into standardized incident response workflows, ATGCO-IDS automatically maps anomaly subgraphs to the MITRE ATT&CK knowledge framework. Detected attacks are mapped to specific TTP IDs and tactic classifications.")
     add_body("For example, a detected DoS flood is mapped to Tactic: Impact (TA0040), Technique: Network Denial of Service (T1498). Reconnaissance scanning is mapped to Tactic: Reconnaissance (TA0043), Technique: Network Service Discovery (T1046). Exploits are mapped to Tactic: Initial Access (TA0001), Technique: Exploit Public-Facing Application (T1190).")
     add_body("Each alert dispatches a standardized STIX 2.1 JSON payload to the SOC queue, containing host IP identities, detected attack category, mapped MITRE TTP ID, confidence score, feature attribution ranking, and automated playbook recommendations (e.g., 'Trigger automated NAC host quarantine on IP 10.0.4.12').")
 
-    add_body("To bridge the gap between GNN predictions and operational cybersecurity workflows, ATGC-MACIDS automatically maps anomaly subgraphs onto the Cyber Threat Knowledge Graph (CT-KG).")
+    add_body("To bridge the gap between GNN predictions and operational cybersecurity workflows, ATGCO-IDS automatically maps anomaly subgraphs onto the Cyber Threat Knowledge Graph (CT-KG).")
 
     add_figure_image("threat_knowledge_graph.png", "Figure 5.2: Cyber Threat Knowledge Graph (CT-KG) Mapped to MITRE ATT&CK Matrix")
 
@@ -1124,17 +1124,17 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
 
     add_heading_2("5.4 Enterprise SIEM Integration, Real-Time Dashboard Architecture")
 
-    add_body("To demonstrate practical utility, ATGC-MACIDS features a web-based real-time SIEM dashboard interface developed using HTML5, SVG graphics, JavaScript (ES6), and Tailwind CSS. The dashboard connects to multi-agent telemetry streams via WebSocket endpoints, rendering dynamic network state visualizations.")
+    add_body("To demonstrate practical utility, ATGCO-IDS features a web-based real-time SIEM dashboard interface developed using HTML5, SVG graphics, JavaScript (ES6), and Tailwind CSS. The dashboard connects to multi-agent telemetry streams via WebSocket endpoints, rendering dynamic network state visualizations.")
     add_body("Core dashboard components include: (1) Interactive SVG Network Topology Map—rendering real-time host nodes, subnet clusters, and directed flow edges color-coded by threat status (Green: Normal, Yellow: Warning, Red: Critical Alert); (2) Live Telemetry & Alert Stream—displaying real-time flow ingestion rates, consensus convergence status, and incoming alerts; (3) Host Inspector Panel—providing granular node metrics, feature saliency distributions, and historical threat timelines; (4) Threat Simulator Sandbox—allowing security operators to inject synthetic DoS, scanning, or Sybil attack flows to evaluate system response live.")
 
     add_body("To demonstrate practical utility, a full-stack, web-based SIEM dashboard was implemented. The frontend renders an interactive SVG network topology map displaying real-time host nodes, color-coded threat levels (green = benign, yellow = suspicious, red = critical attack), live alert telemetry feeds, host inspector panels, and an attack simulator.")
 
     add_heading_2("5.5 Operational Security & Deployment Considerations")
 
-    add_body("Deploying ATGC-MACIDS into production enterprise environments requires addressing operational security, network integration, and lifecycle management. Peer-to-peer agent communications must be secured using TLS 1.3 mutual authentication with hardware-backed private keys stored in Trusted Platform Modules (TPM 2.0) or Hardware Security Modules (HSM) to prevent agent impersonation.")
+    add_body("Deploying ATGCO-IDS into production enterprise environments requires addressing operational security, network integration, and lifecycle management. Peer-to-peer agent communications must be secured using TLS 1.3 mutual authentication with hardware-backed private keys stored in Trusted Platform Modules (TPM 2.0) or Hardware Security Modules (HSM) to prevent agent impersonation.")
     add_body("Model lifecycle management involves continuous monitoring of feature drift. When network traffic distributions shift due to enterprise infrastructure changes, agents execute localized fine-tuning using semi-supervised pseudo-labeling. Hardware deployment leverages containerized microservices (Docker/Kubernetes) deployed on edge security gateways, ensuring seamless scalability across enterprise subnets.")
 
-    add_body("Deploying ATGC-MACIDS in production enterprise environments requires addressing three operational considerations: (1) Lightweight agent deployment via Docker containers, (2) Bandwidth-efficient peer-to-peer vector exchange (sending only 64-dim float vectors rather than raw NetFlow logs), and (3) Dynamic trust threshold tuning to match enterprise risk tolerance.")
+    add_body("Deploying ATGCO-IDS in production enterprise environments requires addressing three operational considerations: (1) Lightweight agent deployment via Docker containers, (2) Bandwidth-efficient peer-to-peer vector exchange (sending only 64-dim float vectors rather than raw NetFlow logs), and (3) Dynamic trust threshold tuning to match enterprise risk tolerance.")
 
     doc.add_page_break()
 
@@ -1146,13 +1146,13 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
     
     add_heading_2("6.1 Summary of Research Contributions")
 
-    add_body("This thesis has presented ATGC-MACIDS, a novel decentralized multi-agent intrusion detection system for high-throughput enterprise subnets. Key theoretical and technical contributions include: 1. Formulation of dynamic network flow telemetry into continuous spatio-temporal attributed graph snapshots. 2. Development of the ST-GAT deep neural encoder combining spatial self-attention with temporal GRU state tracking. 3. Design of the Adaptive Trust Evaluation Engine providing dynamic reputation scoring across spatial similarity, decision fidelity, and alert entropy. 4. Derivation of the Adaptive Trust Jacobi Consensus (ATGCO) protocol enabling rapid, resilient vector agreement under 30% Byzantine/Sybil node corruption. 5. Integration of an XAI feature saliency engine and automated MITRE ATT&CK TTP mapping pipeline.")
+    add_body("This thesis has presented ATGCO-IDS, a novel decentralized multi-agent intrusion detection system for high-throughput enterprise subnets. Key theoretical and technical contributions include: 1. Formulation of dynamic network flow telemetry into continuous spatio-temporal attributed graph snapshots. 2. Development of the ST-GAT deep neural encoder combining spatial self-attention with temporal GRU state tracking. 3. Design of the Adaptive Trust Evaluation Engine providing dynamic reputation scoring across spatial similarity, decision fidelity, and alert entropy. 4. Derivation of the Adaptive Trust Jacobi Consensus (ATGCO) protocol enabling rapid, resilient vector agreement under 30% Byzantine/Sybil node corruption. 5. Integration of an XAI feature saliency engine and automated MITRE ATT&CK TTP mapping pipeline.")
 
-    add_body("This thesis presented ATGC-MACIDS, a novel decentralized multi-agent intrusion detection system for high-throughput enterprise subnets. By uniting spatio-temporal Graph Attention Networks (ST-GAT), Adaptive Trust Jacobi Consensus (ATGCO), and automated MITRE ATT&CK knowledge graph mapping, the proposed framework resolves long-standing trade-offs between detection accuracy, multi-agent trust resilience, processing latency, and operational explainability.")
+    add_body("This thesis presented ATGCO-IDS, a novel decentralized multi-agent intrusion detection system for high-throughput enterprise subnets. By uniting spatio-temporal Graph Attention Networks (ST-GAT), Adaptive Trust Jacobi Consensus (ATGCO), and automated MITRE ATT&CK knowledge graph mapping, the proposed framework resolves long-standing trade-offs between detection accuracy, multi-agent trust resilience, processing latency, and operational explainability.")
 
     add_heading_2("6.2 Key Empirical Takeaways")
 
-    add_body("Comprehensive experimental evaluation on the UNSW-NB15 benchmark dataset yielded four primary empirical takeaways: (1) State-of-the-Art Accuracy: ATGC-MACIDS achieved 96.40% Accuracy, 96.15% F1-Score, and 0.9820 ROC-AUC, outperforming standard GCN, DeepIDS, and Random Forest baselines. (2) Low False Positive Rate: The framework reduced FPR to 3.80%, drastically minimizing SOC alert fatigue. (3) Line-Rate Real-Time Performance: Inference latency of 0.55ms and Jacobi convergence in <5 iterations confirm real-time line-rate capability. (4) Adversarial Resilience: System maintained 92.10% accuracy under 30% corrupted peer agents, outperforming standard FedAvg by 14.3%.")
+    add_body("Comprehensive experimental evaluation on the UNSW-NB15 benchmark dataset yielded four primary empirical takeaways: (1) State-of-the-Art Accuracy: ATGCO-IDS achieved 96.40% Accuracy, 96.15% F1-Score, and 0.9820 ROC-AUC, outperforming standard GCN, DeepIDS, and Random Forest baselines. (2) Low False Positive Rate: The framework reduced FPR to 3.80%, drastically minimizing SOC alert fatigue. (3) Line-Rate Real-Time Performance: Inference latency of 0.55ms and Jacobi convergence in <5 iterations confirm real-time line-rate capability. (4) Adversarial Resilience: System maintained 92.10% accuracy under 30% corrupted peer agents, outperforming standard FedAvg by 14.3%.")
 
     add_bullet("Superior Intrusion Detection: Achieved 96.40% Accuracy, 96.15% F1-Score, and 0.9820 ROC-AUC on UNSW-NB15, outperforming traditional ML and GCN baselines.")
     add_bullet("Resilience Against Adversarial & Sybil Attackers: Maintained 92.10% accuracy under 30% corrupt agent ratio due to adaptive trust isolation (T_ij -> 0).")
@@ -1161,7 +1161,7 @@ Output : Consensus Prediction Y_hat, Updated Trust Scores T_ij, MITRE TTP Mappin
 
     add_heading_2("6.3 Limitations of the Current Study")
 
-    add_body("While ATGC-MACIDS demonstrates exceptional performance, three study limitations warrant discussion: (1) Benchmark Dataset Evaluation: Evaluation was conducted primarily on UNSW-NB15 flow telemetry; future work should validate performance on live enterprise 100 Gbps PCAP streams. (2) Encrypted Payload Blindness: Feature extraction relies on NetFlow summary statistics; encrypted payload anomalies within TLS streams are not examined directly. (3) Dynamic Topology Overhead: Extremely rapid network topology reconfigurations (e.g., highly mobile ad-hoc environments) increase graph snapshot reconstruction overhead.")
+    add_body("While ATGCO-IDS demonstrates exceptional performance, three study limitations warrant discussion: (1) Benchmark Dataset Evaluation: Evaluation was conducted primarily on UNSW-NB15 flow telemetry; future work should validate performance on live enterprise 100 Gbps PCAP streams. (2) Encrypted Payload Blindness: Feature extraction relies on NetFlow summary statistics; encrypted payload anomalies within TLS streams are not examined directly. (3) Dynamic Topology Overhead: Extremely rapid network topology reconfigurations (e.g., highly mobile ad-hoc environments) increase graph snapshot reconstruction overhead.")
 
     add_body("Despite excellent performance, current limitations include: (1) Graph construction dependency on 500ms sliding windows, which may introduce minor buffering delay for ultra-low latency microsecond industrial control systems; (2) Evaluation focused on UNSW-NB15, warranting further validation across encrypted TLS 1.3 telemetry streams.")
 
@@ -1287,15 +1287,16 @@ class STGATEncoder(nn.Module):
         run.font.name = 'Times New Roman'
         run.font.size = Pt(11)
 
-    # Save to main file
-    out_path = "ATGC_MACIDS_Elaborate_Project_Report.docx"
-    doc.save(out_path)
-    print(f"Successfully generated elaborate VIT project report: {out_path}")
-    
-    # Also save as ATGC_MACIDS_Project_Report.docx for reference
-    out_path_2 = "ATGC_MACIDS_Project_Report.docx"
-    doc.save(out_path_2)
-    print(f"Successfully synced with project report: {out_path_2}")
+    # Save to main files with updated title
+    out_paths = [
+        "ATGCO_IDS_Project_Report.docx",
+        "ATGCO_IDS_Elaborate_Project_Report.docx",
+        "ATGC_MACIDS_Elaborate_Project_Report.docx",
+        "ATGC_MACIDS_Project_Report.docx"
+    ]
+    for pth in out_paths:
+        doc.save(pth)
+        print(f"Successfully saved: {pth}")
 
 if __name__ == "__main__":
     build_elaborate_vit_report()
